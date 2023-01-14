@@ -19,7 +19,6 @@ To clone we need to install before `git`, with `sudo pacman -S git` and `git clo
 ## Linux software
 - Kernel: linux
 - Linux distribution: Arch Linux (rolling-release)
-Note: you need the Arch Linux iso in a booteable USB
 
 ### Desktop environment
 - DE: KDE plasma (ark bluedevil breeze ffmpegthumbs kactivitymanagerd kate kcalc kdecoration kgpg kmenuedit konsole kwin kwrite plasma-desktop powerdevil spectale ssdm systemsettings)
@@ -67,10 +66,10 @@ Note: you need the Arch Linux iso in a booteable USB
 - Recorder: obs-studio
 
 ## User
+You can change the username or password after the installation, or put another in the script.
 - username: d7
 - system-name: archsys (root)
-- password (for both): 123
-Note: You can change the password after the installation, or put another in a personal script.
+- password (root and user): 123
 
 ## Hardware compatibility
 - Graphic card: NVDIA or AMD
@@ -82,7 +81,7 @@ After been installing multiple distributions of Linux and try different desktop 
 
 You can use GNOME if you want a very simple desktop or use KDE if you want something more customazibale and sophisticate (but less stable than GNOME).
 
-Notes: all the apps are FOSS (free open-source)
+Note: all the apps are FOSS (free open-source)
 
 # Resources
 - [Arch Linux installation guide](https://wiki.archlinux.org/title/Installation_guide)
