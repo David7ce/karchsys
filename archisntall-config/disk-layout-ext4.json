@@ -1,0 +1,42 @@
+{
+    "/dev/nvme0n1": {
+        "partitions": [
+            {
+                "boot": true,
+                "encrypted": false,
+                "filesystem": {
+                    "format": "fat32"
+                },
+                "format": true,
+                "mountpoint": "/boot",
+                "size": "513MB",
+                "start": "5MB",
+                "type": "primary"
+            },
+            {
+                "encrypted": true,
+                "filesystem": {
+                    "format": "ext4"
+                },
+                "format": true,
+                "mountpoint": "/",
+                "size": "20GB",
+                "start": "518MB",
+                "type": "primary"
+            },
+            {
+                "encrypted": true,
+                "filesystem": {
+                    "format": "ext4"
+                },
+                "format": true,
+                "generate-encryption-key-file": true,
+                "mountpoint": "/home",
+                "size": "100%",
+                "start": "20.5GB",
+                "type": "primary"
+            }
+        ],
+        "wipe": true
+    }
+} 

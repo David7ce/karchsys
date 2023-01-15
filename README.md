@@ -1,11 +1,38 @@
 *ArchSys* is a basic script of Arch Linux system to automatize the task of installation.
 
 # How to install
-Prerequisites: download arch-linux iso and create usb booteable. Launch the usb from the bootloader o in a virtual machine.
+Prerequisites: download arch-linux iso and create usb booteable. Boot the live environment from a USB or from virtual machine.
 
-To install ArchSys you only need to execute the script ./archsys.sh, one way to do is to clone the repository into your machine with git and execute it.
+There are two options to install ArchSys, only use one:
 
-To clone we need to install before `git`, with `sudo pacman -S git` and `git clone https://github.com/david7ce/archsys.git`. Then enter to the directory `cd ./archsys` and `sh archsys`.
+## 1. Run archinstall with preconfigured files. 
+`archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file.
+
+A) Run archinstall with the configuration of this repository:
+`archinstall --config https://raw.githubusercontent.com/David7ce/archinstall-config/main/config-kde.json --creds https://raw.githubusercontent.com/David7ce/archinstall-config/main/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/archinstall-config/main/disk-layout.json`
+
+B) Run archinstall with the configuration of the files in your machine:
+`archinstall --config /var/log/archinstall/user-configuration.json --creds /var/log/user-credentials.json --disk-layout /var/log/archinstall/disk-layout.json`
+
+## 2. Execute the script "archsys.sh" from this repository.
+
+A) Clone the repository in the local machine with git and execute the script:
+
+```sh
+sudo pacman -S git  # install git
+git clone https://github.com/david7ce/archsys.git
+cd ./archsys
+sh archsys
+```
+B) Download the script file with curl and execute it:
+
+```sh
+curl -sL https://raw.githubusercontent.com/david7ce/archsys/master/archsys.sh | bash   # Download script
+vim alis.conf      # Edit configuration and change variables values with your preferences (system configuration)
+./archsys.sh       # Start installation
+```
+
+---
 
 # System configuration
 ## Partitions
@@ -75,6 +102,8 @@ You can change the username or password after the installation, or put another i
 - Graphic card: NVDIA or AMD
 - Processor: AMD
 - Keyboard: spanish
+
+---
 
 ## Why choose this system configuration?
 After been installing multiple distributions of Linux and try different desktop environments, and  window managers, I always end up with the same configuration so this a system to just install and use it. The majority of us before using Linux comes from Windows or maybe macOS, and these operative systems in terms of usability are great. To achive some system with more concern of privacy and an open-source ecosystem Linux is the perfect solution, and to replicate the usability of the desktop enviroment, the best options are KDE (K Desktop Environment) and GNOME.

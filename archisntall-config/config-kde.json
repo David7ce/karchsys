@@ -1,0 +1,33 @@
+{
+    "audio": "pipewire",
+    "bootloader": "grub-install",
+    "desktop-environment": "kde",
+    "dry-run": false,
+    "gfx_driver": "Nvidia (proprietary)",
+    "harddrives": [
+        "/dev/nvme0n1"
+    ],
+    "hostname": "N202",
+    "kernels": [
+        "linux",
+        "linux-lts"
+    ],
+    "keyboard-layout": "us",
+    "mirror-region": {},
+    "nic": {
+        "NetworkManager": true,
+        "nic": "Use NetworkManager (necessary to configure internet graphically in GNOME and KDE)"
+    },
+    "ntp": true,
+    "packages": [
+        "firefox"
+    ],
+    "profile": {
+        "path": "/usr/lib/python3.9/site-packages/archinstall/profiles/desktop.py"
+    },
+    "script": "guided",
+    "swap": true,
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "timezone": "Europe/Canary"
+}

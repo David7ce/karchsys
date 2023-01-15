@@ -1,0 +1,15 @@
+{
+	"!root-password": "<root password>",
+	"!users": [
+		{
+			"username": "<USERNAME>",
+			"!password": "<PASSWORD>",
+			"sudo": false
+		},
+		{
+			"username": "<SUDO_USERNAME>",
+			"!password": "<PASSWORD>",
+			"sudo": true
+		}
+	]
+}
