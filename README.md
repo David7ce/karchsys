@@ -9,7 +9,7 @@ There are two options to install ArchSys, only use one:
 `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file.
 
 A) Run archinstall with the configuration of this repository:
-`archinstall --config https://raw.githubusercontent.com/David7ce/archinstall-config/main/config-kde.json --creds https://raw.githubusercontent.com/David7ce/archinstall-config/main/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/archinstall-config/main/disk-layout.json`
+`archinstall --config https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/config-kde.json --creds https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/disk-layout.json`
 
 B) Run archinstall with the configuration of the files in your machine:
 `archinstall --config /var/log/archinstall/user-configuration.json --creds /var/log/user-credentials.json --disk-layout /var/log/archinstall/disk-layout.json`
