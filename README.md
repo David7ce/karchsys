@@ -5,8 +5,10 @@ Prerequisites: download arch-linux iso and create usb booteable. Boot the live e
 
 There are two options to install ArchSys, only use one:
 
-## 1. Run archinstall with preconfigured files. 
+## 1. Run archinstall with preconfigured files (easy way).
 `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file.
+
+Note: `archinstall --script guided` will perform a guided installation and `archinstall` will let you select from options.
 
 A) Run archinstall with the configuration of this repository:
 `archinstall --config https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/config-kde.json --creds https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/disk-layout.json`

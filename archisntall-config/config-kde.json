@@ -1,33 +1,41 @@
 {
+    "additional-repositories": [
+        "multilib"
+    ],
     "audio": "pipewire",
     "bootloader": "grub-install",
     "desktop-environment": "kde",
-    "dry-run": false,
-    "gfx_driver": "Nvidia (proprietary)",
+    "debug": false,
+    "gfx_driver": "Nvidia (open-source nouveau driver)",
     "harddrives": [
         "/dev/nvme0n1"
     ],
-    "hostname": "N202",
+    "hostname": "archsys",
     "kernels": [
         "linux",
         "linux-lts"
     ],
-    "keyboard-layout": "us",
+    "keyboard-layout": "es",
     "mirror-region": {},
     "nic": {
         "NetworkManager": true,
         "nic": "Use NetworkManager (necessary to configure internet graphically in GNOME and KDE)"
     },
     "ntp": true,
+    "no_pkg_lookups": false,
+    "offline": false,
     "packages": [
-        "firefox"
+        "git",
+        "firefox",
+        "obsidian",
+        "telegram-desktop"
     ],
     "profile": {
-        "path": "/usr/lib/python3.9/site-packages/archinstall/profiles/desktop.py"
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
     },
     "script": "guided",
     "swap": true,
     "sys-encoding": "utf-8",
     "sys-language": "en_US",
-    "timezone": "Europe/Canary"
+    "timezone": "Atlantic/Canary"
 }
