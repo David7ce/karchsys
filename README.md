@@ -1,4 +1,5 @@
-*ArchSys* is a basic script of Arch Linux system to automatize the task of installation.
+*ArchSys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment). 
+
 
 # How to install
 Prerequisites: download arch-linux iso and create usb booteable. Boot the live environment from a USB or from virtual machine.
@@ -65,14 +66,26 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 
 ## Linux software
 - Kernel: linux
-- Linux distribution: Arch Linux (rolling-release)
+- Linux distribution: Arch-Linux (rolling-release)
 
 ### Desktop environment
-- DE: KDE plasma (ark bluedevil breeze ffmpegthumbs kactivitymanagerd kate kcalc kdecoration kgpg kmenuedit konsole kwin kwrite plasma-desktop powerdevil spectale ssdm systemsettings)
+
+- DE: KDE (plasma-desktop)
+
+    - plasma (group): bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
+
+    - plasma-desktop: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
+
+    - plasma-meta: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
+
+    - plasma-wayland-session: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
+
+    - extra: ark cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle
 
 ### Default KDE Plasma
 - Bootloader: GRUB
-- Display server: Xorg (future Wayland)
+- Display server: kwin weston xorg-server (xorg-xwayland)
+- Communication-protocol: wayland (future)
 - File manager: dolphin
 - Terminal: konsole
 - WM: kwin
@@ -82,18 +95,17 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 - Icons: breeze-dark
 - Shell: bash
 
-
 ### Extra packages
 
 #### Basic
-- Audio driver: pipewire, kpipewire, helvum
-- Browser: firefox, ungoogled-chromium, chromium (optional)
+- Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
+- Browser: firefox ungoogled-chromium chromium (optional)
 - Cleaner: bleachbit
 - Client: qbitorrent
-- Dev: git
-- Disk: filelight
+- Dev: ffmpeg git
+- Disk: filelight gparted
 - GUI package manager: pamac
-- Social: discord, telegram
+- Social: discord telegram
 - Transcoder: handbrake
 - Virtualization: virtualbox
 
@@ -103,19 +115,19 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 - 3D-editor: blender
 - Office-editor: libreoffice-fresh
 - Text-editor: nvim
-- Photo-editor: gimp, upscayl
+- Photo-editor: gimp upscayl
 - Vector-graphic-editor: inkscape
 - Video-editor: kdenlive
 
 #### Viewers
 - Image-viewer: gwenview
-- Player: mpv, vlc
+- Player: mpv vlc
 - Recorder: obs-studio
 
 ## User
 You can change the username or password after the installation, or put another in the script.
 - username: d7
-- system-name: archsys (root)
+- hostname: archsys
 - password (root and user): 123
 
 ## Hardware compatibility
@@ -137,3 +149,5 @@ Note: all the apps are FOSS (free open-source)
 - [Arch Linux installation guide](https://wiki.archlinux.org/title/Installation_guide)
 - [Archinstall - man page](https://man.archlinux.org/man/extra/archinstall/archinstall.1.en)
 - [Bootloader: GRUB](https://wiki.archlinux.org/title/GRUB)
+- [Distributions featuring KDE Plasma](https://community.kde.org/Distributions)
+- [KDE - ArchWiki](https://wiki.archlinux.org/title/KDE)
