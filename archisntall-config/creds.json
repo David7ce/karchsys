@@ -1,0 +1,15 @@
+{
+	"!root-password": "123",
+	"!users": [
+		{
+			"username": "user",
+			"!password": "123",
+			"sudo": false
+		},
+		{
+			"username": "archsys",
+			"!password": "123",
+			"sudo": true
+		}
+	]
+}
