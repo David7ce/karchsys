@@ -35,6 +35,23 @@ vim alis.conf      # Edit configuration and change variables values with your pr
 ./archsys.sh       # Start installation
 ```
 
+## 3. Copy config files
+
+You can copy configuration files to the user home, if you have created a personal configuration of a program with a your previous system.
+
+Inside the directory backup of your config files run:
+
+```
+sudo cp ./TTF/* /usr/share/fonts
+sudo cp ./vscode ~/.vscode
+sudo cp ./mozilla ~/.mozilla
+sudo cp -r ./kitty/ ./neofetch/ ./nvim/ ./obs-studio  ~/.config/
+sudo cp ./.bashrc ~/
+
+# Change ownership
+chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-studio
+```
+
 ---
 
 # System configuration
