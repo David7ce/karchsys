@@ -27,6 +27,7 @@ sh archsys
 B) Download the script file with curl and execute it:
 
 ```sh
+# loadkeys es
 curl -sL https://raw.githubusercontent.com/david7ce/archsys/master/archsys.sh | bash   # Download script
 vim alis.conf      # Edit configuration and change variables values with your preferences (system configuration)
 ./archsys.sh       # Start installation

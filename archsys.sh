@@ -11,31 +11,41 @@ loadkeys es
 # 1.2. Update the system clock
 timedatectl status
 
-# 1.3. Partition the disks (cfdisk, fdisk, lsblk)
+# ------------------ #
 
-# 1.4. Partition the disks with fdisk
-fdisk -l
-fdisk /dev/nvme0n1 # '/dev/sda', '/dev/nvme0n1', '/dev/mmcblk0'
-g
-n (ENTER ENTER +550M) # EFI partiion
-n (ENTER ENTER +2G) # Swap partion
-n (ENTER ENTER ENTER) # Filesystem partition
+# /dev/nvme0n1 or /dev/sda1
 
-# Number represents partition
-t (1) 1
-t (2) 19
+# 1.3. Setup the disk and partitions
+swap_size=$(free --mebi | awk '/Mem:/ {print $2}')
+swap_end=$(( $swap_size + 129 + 1 ))MiB
 
-w # Write changes
+parted --script "${device}" -- mklabel gpt \
+  mkpart ESP fat32 1Mib 129MiB \
+  set 1 boot on \
+  mkpart primary linux-swap 129MiB ${swap_end} \
+  mkpart primary ext4 ${swap_end} 100%
 
-# 1.5. Then format the partitions
-mkfs.ext4 /dev/nvme0n1
-mkfs.fat -F 32 /dev/nvme0n2 # EFI partition formatted to fat32
-mkswap /dev/nvme0n3
+# Simple globbing was not enough as on one device I needed to match /dev/mmcblk0p1
+# but not /dev/mmcblk0boot1 while being able to match /dev/sda1 on other devices.
+part_boot="$(ls ${device}* | grep -E "^${device}p?1$")"
+part_swap="$(ls ${device}* | grep -E "^${device}p?2$")"
+part_root="$(ls ${device}* | grep -E "^${device}p?3$")"
 
-# 1.6. Mount the file systems (dev/nvme0nx or /dev/sdax)
-mount /dev/nvme0n1 /mnt
-mount --mkdir /dev/nvme0n2 /mnt/boot
-swapon /dev/sda3
+wipefs "${part_boot}"
+wipefs "${part_swap}"
+wipefs "${part_root}"
+
+# 1.4. Then format the partitions
+mkfs.vfat -F32 "${part_boot}" # EFI partition formatted to fat32
+mkswap "${part_swap}"
+mkfs.ext4 "${part_root}"
+
+# 1.5. Mount the file systems (dev/nvme0nx or /dev/sdax)
+swapon "${part_swap}"
+mount "${part_root}" /mnt
+mount --mkdir "${part_boot}" /mnt/boot
+
+# ------------------ #
 
 # 2. Install base system
 pacman -Sy
@@ -51,7 +61,7 @@ ln -sf /usr/share/zoneinfo/Atlantic/Canary /etc/localtime
 hwclock --systohc
 
 locale-gen
-'LANG=en-US.UTF-8' >> /etc/locale.conf 
+'LANG=en-US.UTF-8' >> /etc/locale.conf  # echo "LANG=en_GB.UTF-8" > /mnt/etc/locale.conf
 'archsys' >> /etc/hostname
 'KEYMAP=es' >> /etc/vconsole.conf
 
