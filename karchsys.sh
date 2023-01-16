@@ -1,9 +1,9 @@
 #!/bin/bash
 # WARNING: this script will destroy data on the selected disk.
 # This script can be run by executing the following:
-#   curl -sL https://raw.githubusercontent.com/David7ce/archsys/main/archsys.sh | bash
+#  curl -sL https://raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash
 
-echo "ArchSys"
+echo "karchsys installation"
 
 # 1.1. Set the console keyboard layout
 loadkeys es
@@ -62,14 +62,14 @@ hwclock --systohc
 
 locale-gen
 'LANG=en-US.UTF-8' >> /etc/locale.conf  # echo "LANG=en_GB.UTF-8" > /mnt/etc/locale.conf
-'archsys' >> /etc/hostname
+'karchsys' >> /etc/hostname
 'KEYMAP=es' >> /etc/vconsole.conf
 
 # 3.5. Network configuration
 # 3.5.1. Hostname
 'd7' >> /etc/hostname
 # 3.5.2. Hosts
-'127.0.0.1 localhost\n ::1 localhost\n 127.0.0.1 archsys.localdomain hostname' >> /etc/hosts
+'127.0.0.1 localhost\n ::1 localhost\n 127.0.0.1 karchsys.localdomain hostname' >> /etc/hosts
 
 # 3.5.3. Initramfs  mkinitcpio -P
 
@@ -97,8 +97,6 @@ exit
 umount -l /mnt
 reboot
 
-# 5. Post-installation
-sudo pacman -S plasma-desktop git base-devel systemctl ark bleachbit docker docker-compose gimp git gwenview firefox filelight handbrake inkscape kdenlive libreoffice-fresh mpv neofetch vlc obsidian telegram-desktop virtualbox rsync
+# 5. Post-installation (install Desktop Environment)
+sudo pacman -S plasma-desktop 
 systemctl enable NetworkManager # for GNOME and KDE
-
-# 6. Config files

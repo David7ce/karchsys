@@ -10,7 +10,7 @@
     "harddrives": [
         "/dev/nvme0n1"
     ],
-    "hostname": "archsys",
+    "hostname": "karchsys",
     "kernels": [
         "linux",
         "linux-lts"

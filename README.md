@@ -1,48 +1,52 @@
-*ArchSys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment). 
-
+*karchsys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment). 
 
 # How to install
-Prerequisites: download arch-linux iso and create usb booteable. Boot the live environment from a USB or from virtual machine.
 
-There are two options to install ArchSys, only use one:
+## Prerequisites
+Download arch-linux iso and create usb booteable. Boot the live environment from a USB in a computer or select the iso in a virtual machine.
 
-## 1. Run archinstall with preconfigured files (easy way).
+
+## Installation
+
+There are various options to install the system:
+
+### Option 1. Run archinstall with preconfigured files (easy way)
 `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file.
 
 Note: `archinstall --script guided` will perform a guided installation and `archinstall` will let you select from options.
 
 A) Run archinstall with the configuration of this repository:
-`archinstall --config https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/config-kde.json --creds https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/archsys/main/archisntall-config/disk-layout.json`
+`archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
 
-B) Run archinstall with the configuration of the files in your machine:
-`archinstall --config /var/log/archinstall/user-configuration.json --creds /var/log/user-credentials.json --disk-layout /var/log/archinstall/disk-layout.json`
+B) Run archinstall with the configuration of the files in your machine (you can download the files on the usb):
+`archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
-## 2. Execute the script "archsys.sh" from this repository.
+Note: you can also run `archinstall` and select your preferred options
 
-A) Clone the repository in the local machine with git and execute the script:
+### Option 2. Execute the script "karchsys.sh" from this repository or do it manually (review the script)
+
+A) Download the script file with curl and execute it: `curl -sL https://raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
+
+B) Clone the repository in the local machine with git and execute the script:
 
 ```sh
 sudo pacman -S git  # install git
-git clone https://github.com/david7ce/archsys.git
-cd ./archsys
-sh archsys
+git clone https://github.com/david7ce/karchsys.git
+cd ./karchsys
+sh karchsys.sh
 ```
-B) Download the script file with curl and execute it:
+
+## Post-installation.
+
+After installing KarchSys you can install extra packages with your package manager like:
 
 ```sh
-# loadkeys es
-curl -sL https://raw.githubusercontent.com/david7ce/archsys/master/archsys.sh | bash   # Download script
-vim alis.conf      # Edit configuration and change variables values with your preferences (system configuration)
-./archsys.sh       # Start installation
+# sudo pacman -S git base-devel systemctl ark bleachbit docker docker-compose gimp git gwenview firefox filelight handbrake inkscape kdenlive libreoffice-fresh mpv neofetch obsidian telegram-desktop rsync virtualbox vlc
 ```
 
-## 3. Copy config files
+Also you can copy configuration files to the user home, if you have created a personal configuration of a program with your previous system. Just copy config files, to do that copy manually or with a script:
 
-You can copy configuration files to the user home, if you have created a personal configuration of a program with a your previous system.
-
-Inside the directory backup of your config files run:
-
-```
+```sh
 sudo cp ./TTF/* /usr/share/fonts
 sudo cp ./vscode ~/.vscode
 sudo cp ./mozilla ~/.mozilla
@@ -66,7 +70,7 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 
 ## Linux software
 - Kernel: linux
-- Linux distribution: Arch-Linux (rolling-release)
+- Linux distribution: arch-Linux
 
 ### Desktop environment
 
@@ -84,11 +88,11 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 
 ### Default KDE Plasma
 - Bootloader: GRUB
-- Display server: kwin weston xorg-server (xorg-xwayland)
+- Display-server: kwin weston xorg-server (xorg-xwayland)
 - Communication-protocol: wayland (future)
 - File manager: dolphin
 - Terminal: konsole
-- WM: kwin
+- Window-manager: kwin
 
 ### Theming
 - Theme: Breeze
@@ -127,7 +131,7 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 ## User
 You can change the username or password after the installation, or put another in the script.
 - username: d7
-- hostname: archsys
+- hostname: karchsys
 - password (root and user): 123
 
 ## Hardware compatibility
