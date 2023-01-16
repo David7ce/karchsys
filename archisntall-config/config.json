@@ -14,7 +14,7 @@
     ],
     "hostname": "karchsys",
     "kernels": [
-        "linux",
+        "linux"
     ],
     "keyboard-layout": "es",
     "mirror-region": {},

@@ -15,6 +15,16 @@
 
             },
             {
+                "filesystem": {
+                    "format": "linux-swap"
+                },
+                "mountpoint": null,
+                "size": "2203MiB",
+                "start": "206MiB",
+                "type": "primary",
+                "wipe": true
+            },
+            {
                 "encrypted": false,
                 "filesystem": {
                     "format": "ext4",
@@ -22,7 +32,7 @@
                 },
                 "mountpoint": "/",
                 "size": "100%",
-                "start": "206MiB",
+                "start": "2206MiB",
                 "type": "primary",
                 "wipe": true
             }

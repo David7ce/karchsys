@@ -4,7 +4,7 @@
 		{
 			"username": "d7",
 			"!password": "123",
-			"sudo": false
+			"sudo": true
 		}
 	]
 }
