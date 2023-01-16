@@ -2,40 +2,51 @@
     "additional-repositories": [
         "multilib"
     ],
+    "archinstall-language": "English",
     "audio": "pipewire",
     "bootloader": "grub-install",
     "desktop-environment": "kde",
     "debug": false,
+    "desktop-enivronment": "kde",
     "gfx_driver": "Nvidia (open-source nouveau driver)",
     "harddrives": [
-        "/dev/nvme0n1"
+        "/dev/nvme"
     ],
     "hostname": "karchsys",
     "kernels": [
         "linux",
-        "linux-lts"
     ],
     "keyboard-layout": "es",
     "mirror-region": {},
     "nic": {
+        "dhcp": true,
+        "dns": null,
+        "iface": null,
+        "ip": null,
+        "type": "nm",
         "NetworkManager": true,
         "nic": "Use NetworkManager (necessary to configure internet graphically in GNOME and KDE)"
     },
-    "ntp": true,
     "no_pkg_lookups": false,
+    "ntp": true,
     "offline": false,
     "packages": [
+        "docker",
         "git",
         "firefox",
         "obsidian",
-        "telegram-desktop"
+        "telegram-desktop",
+        "tree"
     ],
+    "parallel downlaods": 0,
     "profile": {
         "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
     },
     "script": "guided",
+    "silent": false,
     "swap": true,
     "sys-encoding": "utf-8",
     "sys-language": "en_US",
-    "timezone": "Atlantic/Canary"
+    "timezone": "Atlantic/Canary",
+    "version": "2.5.1"
 }

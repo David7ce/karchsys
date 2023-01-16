@@ -8,25 +8,25 @@
                     "format": "vfat"
                 },
                 "mountpoint": "/boot",
-                "size": "513MB",
-                "start": "5MB",
+                "size": "203MiB",
+                "start": "3MiB",
                 "type": "primary",
-                "wipe": false
+                "wipe": true
 
             },
             {
-                "encrypted": true,
+                "encrypted": false,
                 "filesystem": {
-                    "format": "ext4"
+                    "format": "ext4",
+                    "mount_options": []
                 },
-                "format": true,
-                "generate-encryption-key-file": true,
                 "mountpoint": "/",
                 "size": "100%",
-                "start": "513MB",
+                "start": "206MiB",
                 "type": "primary",
-                "wipe": false
+                "wipe": true
             }
-        ]
+        ],
+        "wipe": true
     }
 } 
