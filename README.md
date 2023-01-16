@@ -149,9 +149,10 @@ You can use GNOME if you want a very simple desktop or use KDE if you want somet
 Note: all the apps are FOSS (free open-source)
 
 # Resources
-- [Download Arch Linux](https://archlinux.org/download/)
+- [Arch Linux - Download](https://archlinux.org/download/)
 - [Arch Linux installation guide](https://wiki.archlinux.org/title/Installation_guide)
 - [Archinstall - man page](https://man.archlinux.org/man/extra/archinstall/archinstall.1.en)
+- [Archinstall · GitHub](https://github.com/archlinux/archinstall)
 - [Bootloader: GRUB](https://wiki.archlinux.org/title/GRUB)
 - [Distributions featuring KDE Plasma](https://community.kde.org/Distributions)
 - [KDE - ArchWiki](https://wiki.archlinux.org/title/KDE)
