@@ -12,19 +12,19 @@ There are various options to install the system:
 
 ### Option 1. Run archinstall with preconfigured files (easy way)
 
-> Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options.
+> Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes.
 
-Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file.
+Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file. The bad side is that the url is very large.
 
-A) Run archinstall with preconfigured files from GitHub:
-`archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
+A) From remote url (GitHub): `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
 
-B) Run archinstall with the pre-configured files on your machine (you can use the files on the Live USB):
-`archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
+B) From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
 ### Option 2. Execute the script "karchsys.sh" (review the script)
 
-A) Download the script file with curl and execute it: `curl -sL https://raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
+A) Download the script file with curl and execute it: `curl -sL shorturl.at/fVWY6 | bash`
+
+shorturl.at/fVWY6 = raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh
 
 B) Clone the repository in the local machine with git and execute the script:
 
