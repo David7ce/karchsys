@@ -10,7 +10,7 @@
     "desktop-enivronment": "kde",
     "gfx_driver": "Nvidia (open-source nouveau driver)",
     "harddrives": [
-        "/dev/nvme"
+        "/dev/sda"
     ],
     "hostname": "karchsys",
     "kernels": [

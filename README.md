@@ -11,19 +11,18 @@ Download arch-linux iso and create usb booteable. Boot the live environment from
 There are various options to install the system:
 
 ### Option 1. Run archinstall with preconfigured files (easy way)
-`archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file.
 
-Note: `archinstall --script guided` will perform a guided installation and `archinstall` will let you select from options.
+> Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options.
 
-A) Run archinstall with the configuration of this repository:
+Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file.
+
+A) Run archinstall with preconfigured files from GitHub:
 `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
 
-B) Run archinstall with the configuration of the files in your machine (you can download the files on the usb):
+B) Run archinstall with the pre-configured files on your machine (you can use the files on the Live USB):
 `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
-Note: you can also run `archinstall` and select your preferred options
-
-### Option 2. Execute the script "karchsys.sh" from this repository or do it manually (review the script)
+### Option 2. Execute the script "karchsys.sh" (review the script)
 
 A) Download the script file with curl and execute it: `curl -sL https://raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
 
@@ -32,8 +31,7 @@ B) Clone the repository in the local machine with git and execute the script:
 ```sh
 sudo pacman -S git  # install git
 git clone https://github.com/david7ce/karchsys.git
-cd ./karchsys
-sh karchsys.sh
+sh ./karchsys/karchsys.sh
 ```
 
 ## Post-installation.
@@ -180,3 +178,4 @@ Most of us are familiar with Windows or perhaps MacOS before using Linux, and th
 - [Bootloader: GRUB](https://wiki.archlinux.org/title/GRUB)
 - [Distributions featuring KDE Plasma](https://community.kde.org/Distributions)
 - [KDE - ArchWiki](https://wiki.archlinux.org/title/KDE)
+- [10 Ways KDE is just better - YouTube](https://www.youtube.com/watch?v=3nX1YEQg5Z0)
