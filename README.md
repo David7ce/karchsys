@@ -64,9 +64,9 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 
 | Mount point | Partition                   | Partition type        | Size                    |
 | ----------- | --------------------------- | --------------------- | ----------------------- |
-| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | ~300 MB                 |
-| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | more than 512 MB        |
-| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root (/) | Remainder of the device |
+| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 |
+| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                |
+| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device |
 
 ## Linux software
 - Kernel: linux
@@ -142,17 +142,41 @@ You can change the username or password after the installation, or put another i
 ---
 
 ## Why choose this system configuration?
-After been installing multiple distributions of Linux and try different desktop environments, and  window managers, I always end up with the same configuration so this a system to just install and use it. The majority of us before using Linux comes from Windows or maybe macOS, and these operative systems in terms of usability are great. To achive some system with more concern of privacy and an open-source ecosystem Linux is the perfect solution, and to replicate the usability of the desktop enviroment, the best options are KDE (K Desktop Environment) and GNOME.
+After installing multiple distributions of Linux with different desktop environments and  window managers, I always end up with a similar configuration and visual design. So this is the type of OS that I recommend to use in a daily drive.
 
-You can use GNOME if you want a very simple desktop or use KDE if you want something more customazibale and sophisticate (but less stable than GNOME).
+KarchSys = ArchLinux + Vanilla KDE (by default)
 
-Note: all the apps are FOSS (free open-source)
+### Why Linux?
+I have chosen Linux as the Operative System beacause is the biggest open-source project, is private, secure and there is a big community that can help you. Also is the only one that can copmite against the proprietary system such as Windows and macOS. One thing to mention is that Linux is only the Kernel of the Operative Systems that communicates with the computer hardware, the rest of the OS is constrcuted on top of that and you can customize the way you want.
+
+### Why Arch Linux?
+Arch Linux is very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space. It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, alpine Linux, Void Linux
+
+### Why KDE?
+Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE.
+
+## Distributions with KDE
+### Arch Linux KDE preinstalled
+
+- [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/)
+- [Garuda KDE Git](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-git/)
+- [Manjaro KDE 22](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso)
+- [Xerolinux - Sourceforge](https://sourceforge.net/projects/xerolinux/) 
+
+### Specific distros with KDE
+- [KDE Neon (Debian based)](https://neon.kde.org/)
+- [Kubuntu (Debian based)](https://kubuntu.org/)
+- [Fedora KDE](https://spins.fedoraproject.org/)
+- [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
+- [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/)
+- [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
 
 # Resources
 - [Arch Linux - Download](https://archlinux.org/download/)
 - [Arch Linux installation guide](https://wiki.archlinux.org/title/Installation_guide)
 - [Archinstall - man page](https://man.archlinux.org/man/extra/archinstall/archinstall.1.en)
 - [Archinstall · GitHub](https://github.com/archlinux/archinstall)
+- [ALIS](https://github.com/picodotdev/alis/)
 - [Bootloader: GRUB](https://wiki.archlinux.org/title/GRUB)
 - [Distributions featuring KDE Plasma](https://community.kde.org/Distributions)
 - [KDE - ArchWiki](https://wiki.archlinux.org/title/KDE)

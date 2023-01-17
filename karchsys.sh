@@ -6,7 +6,7 @@
 echo "karchsys installation"
 
 # 1.1. Set the console keyboard layout
-loadkeys es
+# loadkeys es
 
 # 1.2. Update the system clock
 timedatectl status
