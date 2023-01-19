@@ -32,7 +32,7 @@ sh ./karchsys/karchsys.sh
 ```
 
 
-## Option 3. Downlaod a distributions configured with KDE
+## Option 3. Download distributions with KDE configured
 
 ### Arch Linux KDE preinstalled
 - [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/)
