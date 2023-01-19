@@ -48,6 +48,7 @@ sh ./karchsys/karchsys.sh
 - [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
 - [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/)
 - [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
+- [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/)
 
 ### Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
 - [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
