@@ -5,12 +5,11 @@
 ## Prerequisites
 Download arch-linux iso and create usb booteable. Boot the live environment from a USB in a computer or select the iso in a virtual machine.
 
-
 ## Installation
 
-There are various options to install the system:
+There are various options to install the system inside Arch Linux:
 
-### Option 1. Run archinstall with preconfigured files (easy way)
+### Option 1. Run archinstall command (easy way)
 
 > Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes.
 
@@ -23,26 +22,44 @@ B) From local machine: `archinstall --config /var/log/archinstall/config.json --
 ### Option 2. Execute the script "karchsys.sh" (review the script)
 
 A) Download the script file with curl and execute it: `curl -sL shorturl.at/fVWY6 | bash`
-
 shorturl.at/fVWY6 = raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh
 
 B) Clone the repository in the local machine with git and execute the script:
-
 ```sh
 sudo pacman -S git  # install git
 git clone https://github.com/david7ce/karchsys.git
 sh ./karchsys/karchsys.sh
 ```
 
+
+## Option 3. Downlaod a distributions configured with KDE
+
+### Arch Linux KDE preinstalled
+- [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/)
+- [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/)
+- [Garuda KDE Git](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-git/)
+- [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso)
+- [Xerolinux](https://sourceforge.net/projects/xerolinux/)
+
+### Other Linux distributions with KDE
+- [KDE Neon (Debian based)](https://neon.kde.org/)
+- [Kubuntu (Debian based)](https://kubuntu.org/)
+- [Fedora KDE](https://spins.fedoraproject.org/)
+- [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
+- [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/)
+- [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
+
+### Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
+- [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
+
 ## Post-installation.
 
 After installing KarchSys you can install extra packages with your package manager like:
-
 ```sh
 # sudo pacman -S git base-devel systemctl ark bleachbit docker docker-compose gimp git gwenview firefox filelight handbrake inkscape kdenlive libreoffice-fresh mpv neofetch obsidian telegram-desktop rsync virtualbox vlc
 ```
 
-Also you can copy configuration files to the user home, if you have created a personal configuration of a program with your previous system. Just copy config files, to do that copy manually or with a script:
+Also you can copy configuration files to the user home, from your previous system. Just copy config files. To do that copy manually or with a script:
 
 ```sh
 sudo cp ./TTF/* /usr/share/fonts
@@ -58,6 +75,24 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 ---
 
 # System configuration
+
+## Config
+- Language-system: en-US
+- Encoding: utf-8
+- Timezone: UTC
+
+## User
+You can change the username or password after the installation, or put another in the script.
+- username: user0
+- hostname: karchsys
+- password (root and user): !123
+
+## Hardware compatibility
+- Graphic card: NVDIA or AMD
+- Processor: AMD
+- Keyboard: español
+
+
 ## Partitions
 
 | Mount point | Partition                   | Partition type        | Size                    |
@@ -68,21 +103,16 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 
 ## Linux software
 - Kernel: linux
-- Linux distribution: arch-Linux
+- Linux-distribution: arch-Linux
 
 ### Desktop environment
 
 - DE: KDE (plasma-desktop)
-
-    - plasma (group): bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
-
-    - plasma-desktop: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
-
-    - plasma-meta: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
-
-    - plasma-wayland-session: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
-
-    - extra: ark cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle
+    - **plasma (group)**: bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
+    - **plasma-desktop**: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
+    - **plasma-meta**: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
+    - **plasma-wayland-session**: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
+    - **extra-kde**: ark cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle
 
 ### Default KDE Plasma
 - Bootloader: GRUB
@@ -95,10 +125,9 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 ### Theming
 - Theme: Breeze
 - Icons: breeze-dark
-- Shell: bash
+- Shell: bash (alternatives fish or zsh)
 
 ### Extra packages
-
 #### Basic
 - Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
 - Browser: firefox ungoogled-chromium chromium (optional)
@@ -126,17 +155,6 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 - Player: mpv vlc
 - Recorder: obs-studio
 
-## User
-You can change the username or password after the installation, or put another in the script.
-- username: d7
-- hostname: karchsys
-- password (root and user): 123
-
-## Hardware compatibility
-- Graphic card: NVDIA or AMD
-- Processor: AMD
-- Keyboard: spanish
-
 ---
 
 ## Why choose this system configuration?
@@ -148,26 +166,12 @@ KarchSys = ArchLinux + Vanilla KDE (by default)
 I have chosen Linux as the Operative System beacause is the biggest open-source project, is private, secure and there is a big community that can help you. Also is the only one that can copmite against the proprietary system such as Windows and macOS. One thing to mention is that Linux is only the Kernel of the Operative Systems that communicates with the computer hardware, the rest of the OS is constrcuted on top of that and you can customize the way you want.
 
 ### Why Arch Linux?
-Arch Linux is very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space. It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, alpine Linux, Void Linux
+Arch Linux is very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, alpine Linux, Void Linux
 
 ### Why KDE?
 Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE.
 
-## Distributions with KDE
-### Arch Linux KDE preinstalled
-
-- [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/)
-- [Garuda KDE Git](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-git/)
-- [Manjaro KDE 22](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso)
-- [Xerolinux - Sourceforge](https://sourceforge.net/projects/xerolinux/) 
-
-### Specific distros with KDE
-- [KDE Neon (Debian based)](https://neon.kde.org/)
-- [Kubuntu (Debian based)](https://kubuntu.org/)
-- [Fedora KDE](https://spins.fedoraproject.org/)
-- [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
-- [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/)
-- [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
+KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
 
 # Resources
 - [Arch Linux - Download](https://archlinux.org/download/)
