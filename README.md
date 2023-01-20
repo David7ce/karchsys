@@ -49,6 +49,7 @@ sh ./karchsys/karchsys.sh
 - [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/)
 - [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
 - [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/)
+- [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
 
 ### Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
 - [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
@@ -131,6 +132,7 @@ You can change the username or password after the installation, or put another i
 ### Extra packages
 #### Basic
 - Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
+- Backup: rsync
 - Browser: firefox ungoogled-chromium chromium (optional)
 - Cleaner: bleachbit
 - Client: qbitorrent
