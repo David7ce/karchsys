@@ -2,10 +2,10 @@
 
 # How to install
 
-## Prerequisites
+## 0. Prerequisites
 Download arch-linux iso and create usb booteable. Boot the live environment from a USB in a computer or select the iso in a virtual machine.
 
-## Installation
+## 1. Installation
 
 There are various options to install the system inside Arch Linux:
 
@@ -32,16 +32,18 @@ sh ./karchsys/karchsys.sh
 ```
 
 
-## Option 3. Download distributions with KDE configured
+### Option 3. Download distributions with KDE configured
 
-### Arch Linux KDE preinstalled
+#### Arch Linux KDE preinstalled
+
 - [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/)
 - [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/)
 - [Garuda KDE Git](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-git/)
 - [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso)
 - [Xerolinux](https://sourceforge.net/projects/xerolinux/)
 
-### Other Linux distributions with KDE
+#### Other Linux distributions with KDE
+
 - [KDE Neon (Debian based)](https://neon.kde.org/)
 - [Kubuntu (Debian based)](https://kubuntu.org/)
 - [Fedora KDE](https://spins.fedoraproject.org/)
@@ -51,10 +53,12 @@ sh ./karchsys/karchsys.sh
 - [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/)
 - [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
 
-### Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
+#### Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
+
 - [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
 
-## Post-installation.
+
+## 2. Post-installation.
 
 After installing KarchSys you can install extra packages with your package manager like:
 ```sh
@@ -77,6 +81,8 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 ---
 
 # System configuration
+
+Here is my system configuration, you can define yours.
 
 ## Config
 - Language-system: en-US
