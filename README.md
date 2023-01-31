@@ -58,7 +58,7 @@ sh ./karchsys/karchsys.sh
 
 After installing KarchSys you can install extra packages with your package manager like:
 ```sh
-# sudo pacman -S git base-devel systemctl ark bleachbit docker docker-compose gimp git gwenview firefox filelight handbrake inkscape kdenlive libreoffice-fresh mpv neofetch obsidian telegram-desktop rsync virtualbox vlc
+# sudo pacman -S audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
 ```
 
 Also you can copy configuration files to the user home, from your previous system. Just copy config files. To do that copy manually or with a script:
@@ -106,11 +106,13 @@ You can change the username or password after the installation, or put another i
 ## Linux software
 - Kernel: linux
 - Linux-distribution: arch-Linux
+- Desktop environment: KDE (plasma)
+- Extra-packages: audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
 
 ### Desktop environment
 
 - DE: KDE (plasma-desktop)
-    - **plasma (group)**: bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
+    - **plasma-(group)**: bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
     - **plasma-desktop**: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
     - **plasma-meta**: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
     - **plasma-wayland-session**: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
@@ -129,34 +131,39 @@ You can change the username or password after the installation, or put another i
 - Icons: breeze-dark
 - Shell: bash (alternatives fish or zsh)
 
-### Extra packages
-#### Basic
+### Packages
 - Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
-- Backup: rsync
+- Backup: clonezilla rsync
 - Browser: firefox ungoogled-chromium chromium (optional)
-- Cleaner: bleachbit
+- Cleaner: bleachbit privazer
 - Client: qbitorrent
-- Dev: ffmpeg git
+- Dev: ffmpeg git electron
 - Disk: filelight gparted
-- GUI package manager: pamac
+- Editors:
+    - IDE: vscode vscodium
+    - PKM: obsidian
+    - 3D-editor: blender
+    - Office-editor: libreoffice-fresh
+    - Text-editor: nvim
+    - Photo-editor: gimp upscayl
+    - Vector-graphic-editor: inkscape
+    - Video-editor: kdenlive
+- Manager:
+    - File manager: dolphin
+    - Game manager: steam
+- OS-transalation-layer: bottles wine
+- Player / viewer:
+    - Audio-player: audacious elisa
+    - Image-viewer: gwenview
+    - Video-player: mpv vlc
+- Recorder:
+    - Screenshot: flamshot spectacle
+    - Video-recorder: obs-studio
+- Package manager: pamac
 - Social: discord telegram
 - Transcoder: handbrake
+- Utilities: filelight flatpak flatseal findutils neofetch
 - Virtualization: virtualbox
-
-#### Editors
-- IDE: vscode
-- PKM: obsidian
-- 3D-editor: blender
-- Office-editor: libreoffice-fresh
-- Text-editor: nvim
-- Photo-editor: gimp upscayl
-- Vector-graphic-editor: inkscape
-- Video-editor: kdenlive
-
-#### Viewers
-- Image-viewer: gwenview
-- Player: mpv vlc
-- Recorder: obs-studio
 
 ---
 
