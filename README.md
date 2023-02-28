@@ -66,7 +66,7 @@ You can change the username or password after the installation, or put another i
 - Window-manager: kwin
 
 ### Extra-packages
-`audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
+`audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine`
 
 - Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
 - Backup: clonezilla rsync
