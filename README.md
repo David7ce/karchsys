@@ -118,9 +118,9 @@ A) From remote (GitHub): `archinstall --config https://raw.githubusercontent.com
 B) From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
 ### Option 2. Execute the script "karchsys.sh" (review the script before installating)
-A) Download the script file with curl and execute it: `curl -sL shorturl.at/fVWY6 | bash`
+- A) Download the script and execute it with curl: `curl -sL shorturl.at/fVWY6 | bash`
 shorturl.at/fVWY6 = raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh
-B) Clone the repository in the local machine with git and execute the script:
+- B) Clone the repository in the local machine with git and execute the script:
 ```sh
 sudo pacman -S git  # install git
 git clone https://github.com/david7ce/karchsys.git
