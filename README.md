@@ -47,31 +47,27 @@ You can change the username or password after the installation, or put another i
 - Linux-distribution: arch-Linux
 - Desktop environment: KDE-plasma
 - Display Server = Xorg / Wayland
-- Extra-packages: audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
+- Shell: bash (alternatives fish or zsh)
 
-### Desktop environment
-- DE: KDE (plasma-desktop)
-    - [plasma-(group)](https://archlinux.org/groups/x86_64/plasma/)
-    - [plasma-desktop](https://archlinux.org/packages/extra/x86_64/plasma-desktop/)
-    - [plasma-meta](https://archlinux.org/packages/extra/any/plasma-meta/)
-    - [plasma-wayland-session](https://archlinux.org/packages/extra/x86_64/plasma-wayland-session/)
-    - [plasma-workspace](https://archlinux.org/packages/extra/x86_64/plasma-workspace/)
-    - **extra-kde**: ark dolphin cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle partitionmanager
+### K Desktop environment (KDE)
+- [plasma-(group)](https://archlinux.org/groups/x86_64/plasma/)
+- [plasma-desktop](https://archlinux.org/packages/extra/x86_64/plasma-desktop/)
+- [plasma-meta](https://archlinux.org/packages/extra/any/plasma-meta/)
+- [plasma-wayland-session](https://archlinux.org/packages/extra/x86_64/plasma-wayland-session/)
+- [plasma-workspace](https://archlinux.org/packages/extra/x86_64/plasma-workspace/)
+- **extra-kde**: ark dolphin cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle partitionmanager
 
 ### Default KDE Plasma
 - Bootloader: GRUB
 - Display-server: weston xorg-server (xorg-xwayland)
-- Communication-protocol: wayland (future)
 - File-manager: dolphin
 - Terminal: konsole
+- Theme: Breeze-dark
 - Window-manager: kwin
 
-### Theming
-- Theme: Breeze
-- Icons: breeze-dark
-- Shell: bash (alternatives fish or zsh)
+### Extra-packages
+`audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
 
-### Packages
 - Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
 - Backup: clonezilla rsync
 - Browser: firefox ungoogled-chromium chromium (optional)
@@ -110,15 +106,15 @@ You can change the username or password after the installation, or put another i
 # How to install
 
 ## 0. Prerequisites
-Download arch-linux iso and create usb booteable. Boot the live environment from a USB in a computer or select the iso in a virtual machine.
+Download arch-linux iso and create booteable USB. Boot into the live environment from the USB in a your real hardware or select the iso in a virtual machine.
 
 ## 1. Installation
 There are various options to install the system inside Arch Linux:
 
 ### Option 1. Run archinstall command (quick method)
 > Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes, here's a video https://www.youtube.com/watch?v=8mEjwn_AjuQ.
-Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file. The bad side is that the url is very large.
-A) From remote url (GitHub): `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
+Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, from local or remote path.
+A) From remote (GitHub): `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
 B) From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
 ### Option 2. Execute the script "karchsys.sh" (review the script before installating)
@@ -131,30 +127,15 @@ git clone https://github.com/david7ce/karchsys.git
 sh ./karchsys/karchsys.sh
 ```
 
-### Option 3. Download a distributions with KDE configured
-#### Arch Linux KDE preinstalled
-- [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/)
-- [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/)
-- [Garuda KDE Git](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-git/)
-- [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso)
-- [Xerolinux](https://sourceforge.net/projects/xerolinux/)
+### Option 3. Download a distributions with KDE pre-configured
+- Arch Linux with KDE: [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/), [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/), [Garuda KDE Git](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-git/), [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso), [Xerolinux](https://sourceforge.net/projects/xerolinux/)
 
-#### Other Linux distributions with KDE
-- [KDE Neon (Debian based)](https://neon.kde.org/)
-- [Kubuntu (Debian based)](https://kubuntu.org/)
-- [Fedora KDE](https://spins.fedoraproject.org/)
-- [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum)
-- [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
-- [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/)
-- [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
-- [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/)
-- [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
+- Other Linux distributions with KDE: [KDE Neon (Debian based)](https://neon.kde.org/), [Kubuntu (Debian based)](https://kubuntu.org/), [Fedora KDE](https://spins.fedoraproject.org/), [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum), [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist), [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/), [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/), [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/), [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
 
-### Option 4. Create your specific distro with [Calamares installer](https://calamares.io/) selecting packages
 
-- [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
-
-### Option 5. Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
+### Other options. 
+- Create your specific distro with [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso) selecting packages 
+- Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 
 ## 2. Post-installation.
