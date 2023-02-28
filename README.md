@@ -6,12 +6,12 @@ After installing multiple Linux distros with different desktop environments and 
 KarchSys = ArchLinux + Vanilla KDE (by default)
 
 ### Kernel = Linux
-I have chosen Linux as the Operative System beacause is the biggest open-source project, is private, secure and there is a big community that can help you. Also is the only one that can copmite against the proprietary system such as Windows and macOS. One thing to mention is that Linux is only the Kernel of the Operative Systems that communicates with the computer hardware, the rest of the OS is constrcuted on top of that and you can customize the way you want.
+I have chosen Linux as the Operating System beacause is the biggest open-source project, is private, secure, very customazible and there is a big community that can help you . Also is the only one that can compite against the proprietary system such as Windows and macOS. And in case you don't know, Linux is only the Kernel of the Operating System that communicates with the computer hardware, the rest of the OS is constrcuted on top of that.
 
-### Linux distribution = Arch Linux
-Arch Linux is very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, alpine Linux, Void Linux
+### Linux distribution = Arch-Linux
+Arch Linux is a very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, Alpine Linux, Void Linux.
 
-### Desktop Environment = (KDE)
+### Desktop Environment = KDE
 Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE. KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
 
 ---
@@ -26,12 +26,12 @@ Here is my system configuration, you can define yours.
 
 ## User
 You can change the username or password after the installation, or put another in the script.
-- username: user0
+- username: d7
 - hostname: karchsys
 - password (root and user): !123
 
 ## Hardware compatibility
-- Graphic card: NVDIA or AMD
+- Graphic card: NVDIA / AMD (AMD better for Wayland)
 - Processor: AMD
 - Keyboard: español
 
@@ -45,24 +45,24 @@ You can change the username or password after the installation, or put another i
 ## Linux software
 - Kernel: linux
 - Linux-distribution: arch-Linux
-- Desktop environment: KDE (plasma)
+- Desktop environment: KDE-plasma
 - Display Server = Xorg / Wayland
-- Window manager = KWin
 - Extra-packages: audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
 
 ### Desktop environment
 - DE: KDE (plasma-desktop)
-    - **plasma-(group)**: bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
+    - [plasma-(group)](https://archlinux.org/groups/x86_64/plasma/)
     - **plasma-desktop**: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
     - **plasma-meta**: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
     - **plasma-wayland-session**: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
+    - **plasma-workspace**: accountsservice appstream-qt kactivities-stats kactivitymanagerd kde-cli-tools kholidays kio-extras kio-fuse knotifyconfig kpeople kpipewire kquickcharts ksystemstats ktexteditor kuserfeedback kwin libqalculate milou oxygen-sounds plasma-integration prison qt5-tools xorg-xmessage xorg-xrdb xorg-xsetroot appmenu-gtk-module  baloo discover gpsd kdepim-addons networkmanager-qt plasma-workspace-wallpapers baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols wayland-protocols
     - **extra-kde**: ark cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle
 
 ### Default KDE Plasma
 - Bootloader: GRUB
-- Display-server: kwin weston xorg-server (xorg-xwayland)
+- Display-server: weston xorg-server (xorg-xwayland)
 - Communication-protocol: wayland (future)
-- File manager: dolphin
+- File-manager: dolphin
 - Terminal: konsole
 - Window-manager: kwin
 
