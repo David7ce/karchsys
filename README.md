@@ -112,14 +112,14 @@ Download arch-linux iso and create booteable USB. Boot into the live environment
 There are various options to install the system inside Arch Linux:
 
 ### Option 1. Run archinstall command (quick method)
-> Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes, here's a video https://www.youtube.com/watch?v=8mEjwn_AjuQ.
+> Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes, here's a video https://www.youtube.com/watch?v=8mEjwn_AjuQ. 
+ 
 Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, from local or remote path.
-A) From remote (GitHub): `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
-B) From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
+- From remote (GitHub): `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
+- From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
 ### Option 2. Execute the script "karchsys.sh" (review the script before installating)
-- A) Download the script and execute it with curl: `curl -sL shorturl.at/fVWY6 | bash`
-shorturl.at/fVWY6 = raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh
+- A) Download the script and execute it with curl: `curl -sL shorturl.at/fVWY6 | bash` (shorturl.at/fVWY6 = raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh)
 - B) Clone the repository in the local machine with git and execute the script:
 ```sh
 sudo pacman -S git  # install git
