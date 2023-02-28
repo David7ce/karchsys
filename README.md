@@ -119,9 +119,9 @@ Download arch-linux iso and create usb booteable. Boot the live environment from
 
 There are various options to install the system inside Arch Linux:
 
-### Option 1. Run archinstall command (easy way)
+### Option 1. Run archinstall command (quick method)
 
-> Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes.
+> Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes, here's a video https://www.youtube.com/watch?v=8mEjwn_AjuQ.
 
 Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file. The bad side is that the url is very large.
 
@@ -129,7 +129,7 @@ A) From remote url (GitHub): `archinstall --config https://raw.githubusercontent
 
 B) From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
-### Option 2. Execute the script "karchsys.sh" (review the script)
+### Option 2. Execute the script "karchsys.sh" (review the script before installating)
 
 A) Download the script file with curl and execute it: `curl -sL shorturl.at/fVWY6 | bash`
 shorturl.at/fVWY6 = raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh
@@ -141,11 +141,9 @@ git clone https://github.com/david7ce/karchsys.git
 sh ./karchsys/karchsys.sh
 ```
 
-
-### Option 3. Download distributions with KDE configured
+### Option 3. Download a distributions with KDE configured
 
 #### Arch Linux KDE preinstalled
-
 - [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/)
 - [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/)
 - [Garuda KDE Git](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-git/)
@@ -153,19 +151,21 @@ sh ./karchsys/karchsys.sh
 - [Xerolinux](https://sourceforge.net/projects/xerolinux/)
 
 #### Other Linux distributions with KDE
-
 - [KDE Neon (Debian based)](https://neon.kde.org/)
 - [Kubuntu (Debian based)](https://kubuntu.org/)
 - [Fedora KDE](https://spins.fedoraproject.org/)
+- [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum)
 - [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
 - [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/)
 - [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
 - [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/)
 - [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
 
-#### Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
+### Option 4. Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
 
 - [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
+
+### Option 5. Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 
 ## 2. Post-installation.
