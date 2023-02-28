@@ -5,17 +5,15 @@
 
 echo "karchsys installation"
 
-# 1.1. Set the console keyboard layout
+# 1.0. Set the console keyboard layout
 # loadkeys es
 
-# 1.2. Update the system clock
+# 1.1. Update the system clock
 timedatectl status
 
 # ------------------ #
 
-# /dev/nvme0n1 or /dev/sda1
-
-# 1.3. Setup the disk and partitions
+# 1.2. Setup the disk and partitions, /dev/nvme0n1 or /dev/sda1
 swap_size=$(free --mebi | awk '/Mem:/ {print $2}')
 swap_end=$(( $swap_size + 129 + 1 ))MiB
 
@@ -35,16 +33,15 @@ wipefs "${part_boot}"
 wipefs "${part_swap}"
 wipefs "${part_root}"
 
-# 1.4. Then format the partitions
+# 1.3. Then format the partitions
 mkfs.vfat -F32 "${part_boot}" # EFI partition formatted to fat32
 mkswap "${part_swap}"
 mkfs.ext4 "${part_root}"
 
-# 1.5. Mount the file systems (dev/nvme0nx or /dev/sdax)
+# 1.4. Mount the file systems (dev/nvme0nx or /dev/sdax)
 swapon "${part_swap}"
 mount "${part_root}" /mnt
 mount --mkdir "${part_boot}" /mnt/boot
-
 # ------------------ #
 
 # 2. Install base system
@@ -82,8 +79,7 @@ pacman -S sudo
 # EDITOR=nvim visudo # Delete comment in line: %wheel ALL=(ALL:ALL) ALL
 
 # 3.7. Boot loader
-pacman -S grub
-pacman -S  efibootmgr dosfstools os-prober mtools
+pacman -S grub efibootmgr dosfstools os-prober mtools
 mkdir /boot/EFI
 mount /dev/sda1 /boot/EFI
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
