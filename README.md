@@ -1,14 +1,14 @@
 *karchsys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment). 
 
-## Why choose this system?
+# Why to choose this system?
 After installing multiple Linux distros with different desktop environments and  window managers, I always end up with a similar configuration and visual design. So this is the type of OS that I recommend to use in a daily drive for most computers.
 
 KarchSys = ArchLinux + Vanilla KDE (by default)
 
-### Kernel = Linux
+## Kernel = Linux
 I have chosen Linux as the Operating System beacause is the biggest open-source project, is private, secure, very customazible and there is a big community that can help you . Also is the only one that can compite against the proprietary system such as Windows and macOS. And in case you don't know, Linux is only the Kernel of the Operating System that communicates with the computer hardware, the rest of the OS is constrcuted on top of that.
 
-### Linux distribution = Arch-Linux
+## Linux distribution = Arch-Linux
 Arch Linux is a very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, Alpine Linux, Void Linux.
 
 ### Desktop Environment = KDE
@@ -117,15 +117,13 @@ Here's a video using archinstall selecting options from a list:
  
 Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, from local or remote path.
 - From remote (GitHub): `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
-- From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
+- In a short way download "archinstall-config.sh" with curl and execute it: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/archinstall-config.sh | bash`
 
-### Option 2. Execute the script "karchsys.sh" (review the script before installating)
-- A) Download the script with curl and execute the script: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
 - B) Clone the repository in the local machine with git and execute the script:
 ```sh
 sudo pacman -S git  # install git
 git clone https://github.com/david7ce/karchsys.git
-sh ./karchsys/karchsys.sh
+sh ./karchsys/archinstall-config.sh
 ```
 
 ### Option 3. Download a distributions with KDE pre-configured
@@ -133,11 +131,18 @@ sh ./karchsys/karchsys.sh
 
 - Other Linux distributions with KDE: [KDE Neon (Debian based)](https://neon.kde.org/), [Kubuntu (Debian based)](https://kubuntu.org/), [Fedora KDE](https://spins.fedoraproject.org/), [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum), [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist), [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/), [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/), [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/), [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
 
+> **Warning** Option 4. Create a script installation of the system, execute with your consent. There is an example in "karchsys.sh". (Send feedback if you know how to improve it)
+- A) Download the script with curl and execute it: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
+- B) Clone the repository in the local machine with git and execute the script:
+```sh
+sudo pacman -S git  # install git
+git clone https://github.com/david7ce/karchsys.git
+sh ./karchsys/karchsys.sh
+```
 
 ### Other options. 
-- Create your specific distro with [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso) selecting packages 
+- Create your specific distro with [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso) selecting packages.
 - Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
-
 
 ## 2. Post-installation.
 After installing KarchSys you can install extra packages with your package manager like:
