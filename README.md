@@ -51,18 +51,20 @@ You can change the username or password after the installation, or put another i
 
 ### K Desktop environment (KDE)
 - [plasma-(group)](https://archlinux.org/groups/x86_64/plasma/)
-- [plasma-desktop](https://archlinux.org/packages/extra/x86_64/plasma-desktop/)
-- [plasma-meta](https://archlinux.org/packages/extra/any/plasma-meta/)
+- [plasma-meta](https://archlinux.org/packages/extra/any/plasma-meta/): [plasma-desktop](https://archlinux.org/packages/extra/x86_64/plasma-desktop/)
 - [plasma-wayland-session](https://archlinux.org/packages/extra/x86_64/plasma-wayland-session/)
 - [plasma-workspace](https://archlinux.org/packages/extra/x86_64/plasma-workspace/)
+- kde-applications-meta: kde-accessibility-meta kde-graphics-meta kde-multimedia-meta kde-network-meta kde-pim-meta kde-sdk-meta kde-system-meta kde-utilities-meta
 - **extra-kde**: ark dolphin cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle partitionmanager
+- list: ``
+
 
 ### Default KDE Plasma
-- Bootloader: GRUB
+- Bootloader: grub / systemd-boot
 - Display-server: weston xorg-server (xorg-xwayland)
 - File-manager: dolphin
 - Terminal: konsole
-- Theme: Breeze-dark
+- Theme: breeze-dark
 - Window-manager: kwin
 
 ### Extra-packages
