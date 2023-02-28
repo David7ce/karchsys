@@ -150,7 +150,7 @@ sh ./karchsys/karchsys.sh
 - [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/)
 - [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
 
-### Option 4. Create your specific distro with [Calamres installer](https://calamares.io/) selecting packages
+### Option 4. Create your specific distro with [Calamares installer](https://calamares.io/) selecting packages
 
 - [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
 
