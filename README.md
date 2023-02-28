@@ -1,25 +1,22 @@
 *karchsys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment). 
 
-## Why choose this system configuration?
-After installing multiple distributions of Linux with different desktop environments and  window managers, I always end up with a similar configuration and visual design. So this is the type of OS that I recommend to use in a daily drive.
+## Why choose this system?
+After installing multiple Linux distros with different desktop environments and  window managers, I always end up with a similar configuration and visual design. So this is the type of OS that I recommend to use in a daily drive for most computers.
 
 KarchSys = ArchLinux + Vanilla KDE (by default)
 
-### Why Linux?
+### Kernel = Linux
 I have chosen Linux as the Operative System beacause is the biggest open-source project, is private, secure and there is a big community that can help you. Also is the only one that can copmite against the proprietary system such as Windows and macOS. One thing to mention is that Linux is only the Kernel of the Operative Systems that communicates with the computer hardware, the rest of the OS is constrcuted on top of that and you can customize the way you want.
 
-### Why Arch Linux?
+### Linux distribution = Arch Linux
 Arch Linux is very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, alpine Linux, Void Linux
 
-### Why KDE?
-Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE.
-
-KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
+### Desktop Environment = (KDE)
+Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE. KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
 
 ---
 
 # System configuration
-
 Here is my system configuration, you can define yours.
 
 ## Config
@@ -39,7 +36,6 @@ You can change the username or password after the installation, or put another i
 - Keyboard: español
 
 ## Partitions
-
 | Mount point | Partition                   | Partition type        | Size                    |
 | ----------- | --------------------------- | --------------------- | ----------------------- |
 | `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 |
@@ -50,10 +46,11 @@ You can change the username or password after the installation, or put another i
 - Kernel: linux
 - Linux-distribution: arch-Linux
 - Desktop environment: KDE (plasma)
+- Display Server = Xorg / Wayland
+- Window manager = KWin
 - Extra-packages: audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
 
 ### Desktop environment
-
 - DE: KDE (plasma-desktop)
     - **plasma-(group)**: bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
     - **plasma-desktop**: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
@@ -116,24 +113,17 @@ You can change the username or password after the installation, or put another i
 Download arch-linux iso and create usb booteable. Boot the live environment from a USB in a computer or select the iso in a virtual machine.
 
 ## 1. Installation
-
 There are various options to install the system inside Arch Linux:
 
 ### Option 1. Run archinstall command (quick method)
-
 > Note: You can run `archinstall` and select your preferred options, or `archinstall --script guided` which pre-selects options. This takes 2 minutes, here's a video https://www.youtube.com/watch?v=8mEjwn_AjuQ.
-
 Also you can use archinstall with preconfigured files with `archinstall --config <path> --disk-layout <path> --creds <path>`, the path can be a remote URL or a local file. The bad side is that the url is very large.
-
 A) From remote url (GitHub): `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`
-
 B) From local machine: `archinstall --config /var/log/archinstall/config.json --creds /var/log/creds.json --disk-layout /var/log/archinstall/disk-layout.json`
 
 ### Option 2. Execute the script "karchsys.sh" (review the script before installating)
-
 A) Download the script file with curl and execute it: `curl -sL shorturl.at/fVWY6 | bash`
 shorturl.at/fVWY6 = raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh
-
 B) Clone the repository in the local machine with git and execute the script:
 ```sh
 sudo pacman -S git  # install git
@@ -142,7 +132,6 @@ sh ./karchsys/karchsys.sh
 ```
 
 ### Option 3. Download a distributions with KDE configured
-
 #### Arch Linux KDE preinstalled
 - [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/)
 - [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/)
@@ -169,7 +158,6 @@ sh ./karchsys/karchsys.sh
 
 
 ## 2. Post-installation.
-
 After installing KarchSys you can install extra packages with your package manager like:
 ```sh
 # sudo pacman -S audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
