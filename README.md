@@ -52,11 +52,11 @@ You can change the username or password after the installation, or put another i
 ### Desktop environment
 - DE: KDE (plasma-desktop)
     - [plasma-(group)](https://archlinux.org/groups/x86_64/plasma/)
-    - **plasma-desktop**: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
-    - **plasma-meta**: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
-    - **plasma-wayland-session**: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
-    - **plasma-workspace**: accountsservice appstream-qt kactivities-stats kactivitymanagerd kde-cli-tools kholidays kio-extras kio-fuse knotifyconfig kpeople kpipewire kquickcharts ksystemstats ktexteditor kuserfeedback kwin libqalculate milou oxygen-sounds plasma-integration prison qt5-tools xorg-xmessage xorg-xrdb xorg-xsetroot appmenu-gtk-module  baloo discover gpsd kdepim-addons networkmanager-qt plasma-workspace-wallpapers baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols wayland-protocols
-    - **extra-kde**: ark cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle
+    - [plasma-desktop](https://archlinux.org/packages/extra/x86_64/plasma-desktop/)
+    - [plasma-meta](https://archlinux.org/packages/extra/any/plasma-meta/)
+    - [plasma-wayland-session](https://archlinux.org/packages/extra/x86_64/plasma-wayland-session/)
+    - [plasma-workspace](https://archlinux.org/packages/extra/x86_64/plasma-workspace/)
+    - **extra-kde**: ark dolphin cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle partitionmanager
 
 ### Default KDE Plasma
 - Bootloader: GRUB
