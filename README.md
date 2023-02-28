@@ -1,5 +1,115 @@
 *karchsys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment). 
 
+## Why choose this system configuration?
+After installing multiple distributions of Linux with different desktop environments and  window managers, I always end up with a similar configuration and visual design. So this is the type of OS that I recommend to use in a daily drive.
+
+KarchSys = ArchLinux + Vanilla KDE (by default)
+
+### Why Linux?
+I have chosen Linux as the Operative System beacause is the biggest open-source project, is private, secure and there is a big community that can help you. Also is the only one that can copmite against the proprietary system such as Windows and macOS. One thing to mention is that Linux is only the Kernel of the Operative Systems that communicates with the computer hardware, the rest of the OS is constrcuted on top of that and you can customize the way you want.
+
+### Why Arch Linux?
+Arch Linux is very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, alpine Linux, Void Linux
+
+### Why KDE?
+Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE.
+
+KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
+
+---
+
+# System configuration
+
+Here is my system configuration, you can define yours.
+
+## Config
+- Language-system: en-US
+- Encoding: utf-8
+- Timezone: UTC
+
+## User
+You can change the username or password after the installation, or put another in the script.
+- username: user0
+- hostname: karchsys
+- password (root and user): !123
+
+## Hardware compatibility
+- Graphic card: NVDIA or AMD
+- Processor: AMD
+- Keyboard: español
+
+## Partitions
+
+| Mount point | Partition                   | Partition type        | Size                    |
+| ----------- | --------------------------- | --------------------- | ----------------------- |
+| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 |
+| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                |
+| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device |
+
+## Linux software
+- Kernel: linux
+- Linux-distribution: arch-Linux
+- Desktop environment: KDE (plasma)
+- Extra-packages: audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
+
+### Desktop environment
+
+- DE: KDE (plasma-desktop)
+    - **plasma-(group)**: bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
+    - **plasma-desktop**: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
+    - **plasma-meta**: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
+    - **plasma-wayland-session**: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
+    - **extra-kde**: ark cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle
+
+### Default KDE Plasma
+- Bootloader: GRUB
+- Display-server: kwin weston xorg-server (xorg-xwayland)
+- Communication-protocol: wayland (future)
+- File manager: dolphin
+- Terminal: konsole
+- Window-manager: kwin
+
+### Theming
+- Theme: Breeze
+- Icons: breeze-dark
+- Shell: bash (alternatives fish or zsh)
+
+### Packages
+- Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
+- Backup: clonezilla rsync
+- Browser: firefox ungoogled-chromium chromium (optional)
+- Cleaner: bleachbit privazer
+- Client: qbitorrent
+- Dev: ffmpeg git electron
+- Disk: filelight gparted
+- Editors:
+    - IDE: vscode vscodium
+    - PKM: obsidian
+    - 3D-editor: blender
+    - Office-editor: libreoffice-fresh
+    - Text-editor: nvim
+    - Photo-editor: gimp upscayl
+    - Vector-graphic-editor: inkscape
+    - Video-editor: kdenlive
+- Manager:
+    - File manager: dolphin
+    - Game manager: steam
+- OS-transalation-layer: bottles wine
+- Player / viewer:
+    - Audio-player: audacious elisa
+    - Image-viewer: gwenview
+    - Video-player: mpv vlc
+- Recorder:
+    - Screenshot: flamshot spectacle
+    - Video-recorder: obs-studio
+- Package manager: pamac
+- Social: discord telegram
+- Transcoder: handbrake
+- Utilities: filelight flatpak flatseal findutils neofetch
+- Virtualization: virtualbox
+
+---
+
 # How to install
 
 ## 0. Prerequisites
@@ -79,115 +189,6 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 ```
 
 ---
-
-# System configuration
-
-Here is my system configuration, you can define yours.
-
-## Config
-- Language-system: en-US
-- Encoding: utf-8
-- Timezone: UTC
-
-## User
-You can change the username or password after the installation, or put another in the script.
-- username: user0
-- hostname: karchsys
-- password (root and user): !123
-
-## Hardware compatibility
-- Graphic card: NVDIA or AMD
-- Processor: AMD
-- Keyboard: español
-
-
-## Partitions
-
-| Mount point | Partition                   | Partition type        | Size                    |
-| ----------- | --------------------------- | --------------------- | ----------------------- |
-| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 |
-| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                |
-| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device |
-
-## Linux software
-- Kernel: linux
-- Linux-distribution: arch-Linux
-- Desktop environment: KDE (plasma)
-- Extra-packages: audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
-
-### Desktop environment
-
-- DE: KDE (plasma-desktop)
-    - **plasma-(group)**: bluedevil breeze breeze-gtk discover drkonqi kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma5 khotkeys kinfocenter kmenuedit kpipewire kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland-integration kwin kwrited layer-shell-qt libkscreen libksysguard milou oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace plasma-workspace-wallpapers polkit-kde-agent powerdevil sddm-kcm systemsettings xdg xdg-desktop-portal-kde
-    - **plasma-desktop**: baloo gawk kdelibs4support kmenuedit libibus polkit-kde-agent systemsettings xdg-user-dirs ibus kaccounts-integration kscreen packagekit-qt5 plasma-nm powerdevil scimnal extra-cmake-modules intltool kaccounts-integration kdesignerplugin kdoctools kinit packagekit-qt5 scim wayland-protocols xf86-input-evdev xf86-input-libinput xf86-input-synaptics xorg-server-devel
-    - **plasma-meta**: bluedevil breeze-gtk breeze-grub discover drkonqi kde-gtk-config kdeplasma-addons kgamma5 khotkeys kinfocenter kscreen ksshaskpass kwallet-pam kwayland-integration kwrited oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-workspace-wallpapers powerdevil sddm-kcm xdg-desktop-portal-kde  
-    - **plasma-wayland-session**: egl-wayland kwayland-integration plasma-workspace qt5-wayland xorg-xwayland baloo extra-cmake-modules gpsd kdoctools kunitconversion networkmanager-qt plasma-wayland-protocols
-    - **extra-kde**: ark cuttlefish filelight ffmpegthumbnailer ffmpegthumbs inkscape kate kcalc kwrite kdenlive konsole krita spectacle
-
-### Default KDE Plasma
-- Bootloader: GRUB
-- Display-server: kwin weston xorg-server (xorg-xwayland)
-- Communication-protocol: wayland (future)
-- File manager: dolphin
-- Terminal: konsole
-- Window-manager: kwin
-
-### Theming
-- Theme: Breeze
-- Icons: breeze-dark
-- Shell: bash (alternatives fish or zsh)
-
-### Packages
-- Audio-driver: pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-zeroconf kpipewire helvum
-- Backup: clonezilla rsync
-- Browser: firefox ungoogled-chromium chromium (optional)
-- Cleaner: bleachbit privazer
-- Client: qbitorrent
-- Dev: ffmpeg git electron
-- Disk: filelight gparted
-- Editors:
-    - IDE: vscode vscodium
-    - PKM: obsidian
-    - 3D-editor: blender
-    - Office-editor: libreoffice-fresh
-    - Text-editor: nvim
-    - Photo-editor: gimp upscayl
-    - Vector-graphic-editor: inkscape
-    - Video-editor: kdenlive
-- Manager:
-    - File manager: dolphin
-    - Game manager: steam
-- OS-transalation-layer: bottles wine
-- Player / viewer:
-    - Audio-player: audacious elisa
-    - Image-viewer: gwenview
-    - Video-player: mpv vlc
-- Recorder:
-    - Screenshot: flamshot spectacle
-    - Video-recorder: obs-studio
-- Package manager: pamac
-- Social: discord telegram
-- Transcoder: handbrake
-- Utilities: filelight flatpak flatseal findutils neofetch
-- Virtualization: virtualbox
-
----
-
-## Why choose this system configuration?
-After installing multiple distributions of Linux with different desktop environments and  window managers, I always end up with a similar configuration and visual design. So this is the type of OS that I recommend to use in a daily drive.
-
-KarchSys = ArchLinux + Vanilla KDE (by default)
-
-### Why Linux?
-I have chosen Linux as the Operative System beacause is the biggest open-source project, is private, secure and there is a big community that can help you. Also is the only one that can copmite against the proprietary system such as Windows and macOS. One thing to mention is that Linux is only the Kernel of the Operative Systems that communicates with the computer hardware, the rest of the OS is constrcuted on top of that and you can customize the way you want.
-
-### Why Arch Linux?
-Arch Linux is very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, alpine Linux, Void Linux
-
-### Why KDE?
-Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE.
-
-KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
 
 # Resources
 - [Arch Linux - Download](https://archlinux.org/download/)
