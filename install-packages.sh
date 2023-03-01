@@ -8,7 +8,7 @@ sudo pacman -S ark digikam dolphin dolphin-plugins elisa filelight gwenview inks
 
 # Extra packages
 # install packages with pacman
-sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre code chromium clonezilla ffmpeg ffmpegthumbnailer ffmpegthumbs firefox firewalld flameshot flatpak freshfetch gimp git handbrake gimp godot gparted imagemagick kdenlive kepassxc kitty libreoffice-fresh libvirt mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse qbitorrent rsync shotwell supertux telegram-desktop tree tmux virtualbox virt-install vlc wine xf86-video-amdgpu  xf86-video-nouveau  xf86-video-vesa xorg-server xorg-xwayland yt-dlp
+sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre code chromium clonezilla ffmpeg ffmpegthumbnailer ffmpegthumbs firefox firewalld flameshot flatpak freshfetch gimp git handbrake gimp godot gparted imagemagick kdenlive keepassxc kitty libreoffice-fresh libvirt mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse rsync shotwell supertux telegram-desktop tree tmux virtualbox virt-install vlc wine xf86-video-amdgpu  xf86-video-nouveau  xf86-video-vesa xorg-server xorg-xwayland yt-dlp
 
 # install yay from aur with git
 git clone https://aur.archlinux.org/yay.git
