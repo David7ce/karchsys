@@ -83,7 +83,7 @@ sh ./karchsys/archinstall-config.sh
 
 - Other Linux distributions with KDE: [KDE Neon (Debian based)](https://neon.kde.org/), [Kubuntu (Debian based)](https://kubuntu.org/), [Fedora KDE](https://spins.fedoraproject.org/), [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum), [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist), [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/), [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/), [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/), [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download)
 
-## Option 3. Create and execute your own script installation
+### Option 3. Create and execute your own script installation
 > **Warning** Modify the script installation "karchsys.sh" and execute with your consent. (Send feedback if you know how to improve it)
 - A) Download the script with curl and execute it: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
 - B) Clone the repository in the local machine with git and execute the script:
