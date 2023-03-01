@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # KDE basic
 sudo pacman -S plasma-desktop plasma-meta plasma-wayland-protocols plasma-wayland-session plasma-workspace
 
