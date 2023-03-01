@@ -97,7 +97,7 @@ sh ./karchsys/karchsys.sh
 - Install via GUI with [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso) selecting packages.
 - Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
-## 2. Post-installation.
+## 2. Post-installation
 After installing KarchSys you can install extra packages with your package manager like: `sh install-pkglist.sh`
 ```sh
 # sudo pacman -S audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
