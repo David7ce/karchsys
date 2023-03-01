@@ -11,7 +11,7 @@ I have chosen Linux as the Operating System beacause is the biggest open-source 
 ## Linux distribution = Arch-Linux
 Arch Linux is a very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, Alpine Linux, Void Linux.
 
-### Desktop Environment = KDE
+## Desktop Environment = KDE
 Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE. KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
 
 ---
@@ -98,7 +98,7 @@ sh ./karchsys/karchsys.sh
 - Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 ## 2. Post-installation.
-After installing KarchSys you can install extra packages with your package manager like:
+After installing KarchSys you can install extra packages with your package manager like: `sh install-pkglist.sh`
 ```sh
 # sudo pacman -S audacious bleachbit blender code chromium dolphin elisa firefox flameshot flatpak freshfetch git handbrake neofetch gimp godot git handbrake kdenlive kitty mpv neovim obs-studio obsidian picard qbitorrent rsync telegram tmux virtualbox vlc vscode wine
 ```
