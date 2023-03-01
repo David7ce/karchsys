@@ -100,13 +100,11 @@ sh ./karchsys/karchsys.sh
 ## 2. Post-installation
 After installing KarchSys you can install extra packages with your package manager like: `sh install-pkglist.sh`
 ```sh
-sudo pacman -S 
+sudo pacman -S plasma-desktop plasma-meta plasma-wayland-protocols plasma-wayland-session plasma-workspace
 
-plasma-desktop plasma-meta plasma-wayland-protocols plasma-wayland-session plasma-workspace
+sudo pacman -S  ark digikam dolphin dolphin-plugins cuttlefish elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork-filesharing kdenlive khelpcenter kmag kmix kmousetool kmouth kontrast kwrite konsole krita ksystemlog markdownpart okular partitionmanager print-manager skanlite skanpage spectacle sweeper yakuake
 
-ark digikam dolphin dolphin-plugins cuttlefish elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork_filesharing kdenlive khelpcenter kmag kmix kmousetool kmouth kontrast kwrite konsole krita ksystemlog markdownpart okular partitionmanager print-manager skanlite skanpage spectacle sweeper yakuake
-
-archinstall arduino asciinema audacious base base-devel bleachbit blender calibre code chromium clonezilla ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak freshfetch gimp git handbrake gimp godot gparted imagemagick kepassxc kitty libreoffice-fresh libvirt mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse qbitorrent rsync shotwell supertux telegram-desktop tree tmux virtualbox virt-install vlc wine xf86-video-amdgpu xf86-video-nouveau xf86-video-vesa xorg-server xorg-xwayland yt-dlp
+sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre code chromium clonezilla ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak freshfetch gimp git handbrake gimp godot gparted imagemagick kepassxc kitty libreoffice-fresh libvirt mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse qbitorrent rsync shotwell supertux telegram-desktop tree tmux virtualbox virt-install vlc wine xf86-video-amdgpu xf86-video-nouveau xf86-video-vesa xorg-server xorg-xwayland yt-dlp
 ```
 
 Also you can copy configuration files to the user home, from your previous system. Just copy config files. To do that copy manually or with a script:
