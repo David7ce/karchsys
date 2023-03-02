@@ -75,11 +75,9 @@ When you boot into Arch, run "archinstall", you only need to select options, in 
 [![Watch the video](https://img.youtube.com/vi/8mEjwn_AjuQ/maxresdefault.jpg)](https://www.youtube-nocookie.com/embed/8mEjwn_AjuQ?start=146)
  
 You can also use archinstall with preconfigured options stored in files as json `archinstall --config <path> --disk-layout <path> --creds <path>' where the path can be local or remote.
-- A) From remote: `archinstall --config https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/config.json --creds https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/creds.json --disk-layout https://raw.githubusercontent.com/David7ce/karchsys/main/archisntall-config/disk-layout.json`. Or shortened `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/archinstall-config.sh | bash`
-
-- B) From local, clone the repository with git and execute "archinstall-config.sh" that runs archinstall with preconfigured options:
+- From local, clone the repository with git and execute "archinstall-config.sh" that runs archinstall with preconfigured options:
 ```sh
-sudo pacman -S git  # install git
+sudo pacman -S git
 git clone https://github.com/david7ce/karchsys.git
 sh ./karchsys/archinstall-config.sh
 ```
@@ -91,17 +89,17 @@ sh ./karchsys/archinstall-config.sh
 
 ### Option 3. Create and execute your own script installation
 > **Warning** Modify the script installation "karchsys.sh" and execute with your consent. (Send feedback if you know how to improve it)
-- A) Download the script with curl and execute it: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
-- B) Clone the repository in the local machine with git and execute the script:
+- Download the script with curl and execute it: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
+- Or clone the repository in the local machine with git and execute the script:
 ```sh
-sudo pacman -S git  # install git
+sudo pacman -S git
 git clone https://github.com/david7ce/karchsys.git
 sh ./karchsys/karchsys.sh
 ```
 
 ### Other options. 
 - Install via GUI with [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso) selecting packages.
-- Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
+- Write the commands manually following the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 ## 2. Post-installation
 After installing KarchSys you can install extra packages with your package manager. Execure `sh install-pkglist.sh` for Arch linux or create your script.
