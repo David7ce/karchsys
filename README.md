@@ -36,20 +36,20 @@ You can change the username or password after the installation, or put another i
 - Keyboard: español
 
 ## Partitions
-| Mount point | Partition                   | Partition type        | Size                    | Type        |
-| ----------- | --------------------------- | --------------------- | ----------------------- | ----------- |
-| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 | NTFS        |
-| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                | SWAP        |
-| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device | EXT4 / BRFS |
+| Mount point | Partition                   | Partition type        | Size                    | Type   |
+| ----------- | --------------------------- | --------------------- | ----------------------- | ------ |
+| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 | FAT32  |
+| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                | SWAP   |
+| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device | BTRFS  |
 
 ## Linux software
 - Kernel: linux
 - Linux-distribution: arch-Linux
+- Bootloader: grub (better for btrfs) / systemd-boot
+- Shell: bash / fish / zsh
 - Desktop environment: KDE-plasma
-    - Bootloader: grub / systemd-boot
     - Display-server: xorg / (xorg-xwayland wayland weston)
     - File-manager: dolphin
-    - Shell: bash (alternatives fish or zsh)
     - Terminal: konsole
     - Theme: breeze-dark
     - Window-manager: kwin
