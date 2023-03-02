@@ -36,23 +36,29 @@ You can change the username or password after the installation, or put another i
 - Keyboard: español
 
 ## Partitions
-| Mount point | Partition                   | Partition type        | Size                    | Type   |
-| ----------- | --------------------------- | --------------------- | ----------------------- | ------ |
-| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 | FAT32  |
-| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                | SWAP   |
-| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device | BTRFS  |
+| Mount point | Partition                   | Partition type        | Size                    | Type           |
+| ----------- | --------------------------- | --------------------- | ----------------------- | -------------- |
+| `/mnt/boot` | `/dev/efi_system_partition` | EFI system partition  | 203 MiB                 | FAT32          |
+| `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                | SWAP           |
+| `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device | BTRFS or EXT4  |
 
 ## Linux software
 - Kernel: linux
 - Linux-distribution: arch-Linux
 - Bootloader: grub (better for btrfs) / systemd-boot
 - Shell: bash / fish / zsh
+- Drivers: 
+    - Audio-drivers: pìpewire
+    - Video-drivers: amd-gpu / nvidia (nvidia open nvidia-utils nouveau)
 - Desktop environment: KDE-plasma
-    - Display-server: xorg / (xorg-xwayland wayland weston)
+    - Display-server: xorg xorg-xwayland / wayland weston
     - File-manager: dolphin
     - Terminal: konsole
+    - Terminal-text-editor: nano vim
+    - Text-editor-GUI: kate
     - Theme: breeze-dark
     - Window-manager: kwin
+- Extra-packages: firefox libreoffice-fresh
 
 ---
 
@@ -98,21 +104,19 @@ sh ./karchsys/karchsys.sh
 - Write the commands manually using the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 ## 2. Post-installation
-After installing KarchSys you can install extra packages with your package manager like: `sh install-pkglist.sh`
+After installing KarchSys you can install extra packages with your package manager. Execure `sh install-pkglist.sh` for Arch linux or create your script.
 ```sh
-sudo pacman -S plasma-desktop plasma-meta plasma-wayland-protocols plasma-wayland-session plasma-workspace
-
-sudo pacman -S  ark digikam dolphin dolphin-plugins cuttlefish elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork-filesharing kdenlive khelpcenter kmag kmix kmousetool kmouth kontrast kwrite konsole krita ksystemlog markdownpart okular partitionmanager print-manager skanlite skanpage spectacle sweeper yakuake
-
-sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre code chromium clonezilla ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak freshfetch gimp git handbrake gimp godot gparted imagemagick keepassxc kitty libreoffice-fresh libvirt mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse qbittorrent rsync shotwell supertux telegram-desktop tree tmux virtualbox virt-install vlc wine xf86-video-amdgpu xf86-video-nouveau xf86-video-vesa xorg-server xorg-xwayland yt-dlp
+sudo pacman -S package-name  # on arch
+sudo apt install package-name # on debian
+sudo dnf install package-name # on fedora
+zypper install # on opensuse
 ```
 
 Also you can copy configuration files to the user home, from your previous system. Just copy config files. To do that copy manually or with a script:
-
 ```sh
 sudo cp ./TTF/* /usr/share/fonts
-sudo cp ./vscode ~/.vscode
 sudo cp ./mozilla ~/.mozilla
+sudo cp ./vscode ~/.vscode
 sudo cp -r ./kitty/ ./neofetch/ ./nvim/ ./obs-studio  ~/.config/
 sudo cp ./.bashrc ~/
 
