@@ -10,7 +10,7 @@
 # audio drivers (pipewire)
 # sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse 
 
-video drivers
+# video drivers
 # sudo pacman -S lib32-mesa libva-mesa-driver nvidia xf86-video-amdgpu xf86-video-nouveau xf86-video-vesa xf86-video-ati-git xf86-video-chips
 
 # Post installation
