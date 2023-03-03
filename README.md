@@ -16,6 +16,8 @@ Most of us are familiar with Windows or perhaps MacOS before using Linux, and th
 
 ---
 
+![](/img/karchsys-min.png)
+
 # System configuration
 Here is my system configuration, you can define yours.
 
@@ -72,7 +74,7 @@ There are various options to install this configuration system inside Arch Linux
 
 ### Option 1. Run archinstall command
 When you boot into Arch, run "archinstall", you only need to select options, in less than 5 minutes you can start the installation. Watch this video using archinstall:
-[![Watch the video](https://img.youtube.com/vi/8mEjwn_AjuQ/maxresdefault.jpg)](https://www.youtube-nocookie.com/embed/8mEjwn_AjuQ?start=146)
+[![Watch the video](/img/archinstall-video.png)](https://www.youtube-nocookie.com/embed/8mEjwn_AjuQ?start=146)
  
 You can also use archinstall with preconfigured options stored in files as json `archinstall --config <path> --disk-layout <path> --creds <path>' where the path can be local or remote.
 - From local, clone the repository with git and execute "archinstall-config.sh" that runs archinstall with preconfigured options:
