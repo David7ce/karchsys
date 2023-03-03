@@ -81,7 +81,7 @@ You can also use archinstall with preconfigured options stored in files as json 
 ```sh
 sudo pacman -S git
 git clone https://github.com/david7ce/karchsys.git
-sh ./karchsys/archinstall-config.sh
+sh ./karchsys/scripts/archinstall-config.sh
 ```
 
 ### Option 2. Download a distributions with KDE pre-configured
@@ -91,12 +91,12 @@ sh ./karchsys/archinstall-config.sh
 
 ### Option 3. Create and execute your own script installation
 > **Warning** Modify the script installation "karchsys.sh" and execute with your consent. (Send feedback if you know how to improve it)
-- Download the script with curl and execute it: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/karchsys.sh | bash`
+- Download the script with curl and execute it: `curl -sL raw.githubusercontent.com/david7ce/karchsys/master/scripts/karchsys.sh | bash`
 - Or clone the repository in the local machine with git and execute the script:
 ```sh
 sudo pacman -S git
 git clone https://github.com/david7ce/karchsys.git
-sh ./karchsys/karchsys.sh
+sh ./scripts/karchsys.sh
 ```
 
 ### Other options. 
@@ -104,7 +104,7 @@ sh ./karchsys/karchsys.sh
 - Write the commands manually following the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 ## 2. Post-installation
-After installing KarchSys you can install extra packages with your package manager. Execure `sh install-pkglist.sh` for Arch linux or create your script.
+After installing KarchSys you can install extra packages with your package manager. Execute `sh ./scripts/install-packages.sh` for Arch linux or create your script.
 ```sh
 sudo pacman -S package-name  # on arch
 sudo apt install package-name # on debian

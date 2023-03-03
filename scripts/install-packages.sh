@@ -18,7 +18,7 @@ video drivers
 sudo pacman -S ark digikam cuttlefish elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork-filesharing kdenlive khelpcenter kmag kmix kmousetool kmouth kontrast kwrite konsole krita ksystemlog markdownpart okular partitionmanager print-manager skanlite skanpage spectacle sweeper yakuake
 
 # basic packages
-sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre cava chromium clonezilla code curl ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak freshfetch git godot gparted handbrake imagemagick keepassxc kitty libreoffice-fresh libvirt libwebp lynx mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard qbittorrent qemu-base qemu-desktop reflector rsync snapper-support shotwell supertux telegram-desktop tree tmux unrar upscaler-bin virtualbox virt-install vlc wget wine yt-dlp
+sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre cava chromium clonezilla code curl docker docker-compose ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak freshfetch git godot gparted handbrake imagemagick keepassxc kitty libreoffice-fresh libvirt libwebp lynx mesa mpv nb neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard qbittorrent qemu-base qemu-desktop reflector rsync snapper-support shotwell supertux telegram-desktop tree tmux unrar upscaler-bin virtualbox virt-install vlc wget wine yt-dlp
 # debtap dpkg gimp latte-dock lshw
 
 # install yay from aur with git
