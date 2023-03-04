@@ -26,8 +26,8 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 # install packages from AUR with yay
-yay -S 7zip-full activitywatch-bin  cava dia helvum-git snapper-support ungoogled-chromium upscayl-bin wlroots-git xampp youtube
-# autofirma-bin libpamac libpamac-au libpamac-flatpak pamac-aur
+yay -S 7zip-full activitywatch-bin bottles dia helvum-git snapper-support ungoogled-chromium upscayl-bin xampp youtube-music-bin
+# autofirma-bin cava freetube-bin libpamac libpamac-au libpamac-flatpak pamac-aur wlroots-git
 
 # install packages with flatpak
 sudo flatpak install flathub com.usebottles.bottles me.hyliu.fluentreader net.veloren.airshipper com.github.tchx84.Flatseal net.davidotek.pupgui2 org.gimp.GIMP
