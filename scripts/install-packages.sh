@@ -17,7 +17,7 @@
 # kde packages
 sudo pacman -S ark digikam elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork-filesharing kdenlive khelpcenter kmag kmix kmousetool kmouth kontrast kwrite konsole krita ksystemlog markdownpart okular partitionmanager print-manager skanlite skanpage spectacle sweeper yakuake
 # basic packages
-sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre chromium clonezilla code curl docker docker-compose ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak git godot gparted handbrake imagemagick keepassxc kitty libreoffice-fresh libvirt libwebp lynx mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard qbittorrent qemu-base reflector rsync shotwell telegram-desktop tree tmux unrar virt-install vlc wget wine yt-dlp
+sudo pacman -S archinstall arduino asciinema audacious base base-devel bleachbit blender calibre chromium clonezilla code curl discord docker docker-compose ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak git godot gparted handbrake imagemagick keepassxc kitty libreoffice-fresh libvirt libwebp lynx mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard qbittorrent qemu-base reflector rsync shotwell telegram-desktop tree tmux unrar virt-install vlc wget wine yt-dlp
 # supertux supertuxkart
 # debtap dpkg freshfetch gimp latte-dock lshw nb qemu-desktop virtualbox
 
