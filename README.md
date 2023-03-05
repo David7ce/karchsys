@@ -1,11 +1,12 @@
-*karchsys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment). 
+*karchsys* is an Arch Linux distribution with vanilla KDE (K Desktop Environment).
+![](/img/karchsys-min.png)
 
 # Why to choose this system?
 After installing multiple Linux distros with different desktop environments and  window managers, I always end up with a similar configuration and visual design. So this is the type of OS that I recommend to use in a daily drive for most computers.
 
 KarchSys = ArchLinux + Vanilla KDE (by default)
 
-## [Kernel = Linux)[https://kernel.org/]
+## [Kernel = Linux](https://kernel.org/)
 I have chosen Linux as the Operating System beacause is the biggest open-source project, is private, secure, very customazible and there is a big community that can help you . Also is the only one that can compite against the proprietary system such as Windows and macOS. And in case you don't know, Linux is only the Kernel of the Operating System that communicates with the computer hardware, the rest of the OS is constrcuted on top of that.
 
 ## Linux distribution = [Arch-Linux](https://archlinux.org/)
@@ -16,10 +17,6 @@ Most of us are familiar with Windows or perhaps MacOS before using Linux, and th
 
 ![](/img/linux-architecture.jpg)
 
----
-
-
-![](/img/karchsys-min.png)
 
 # System configuration
 Here is my system configuration, you can define yours.
