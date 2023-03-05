@@ -5,16 +5,19 @@ After installing multiple Linux distros with different desktop environments and 
 
 KarchSys = ArchLinux + Vanilla KDE (by default)
 
-## Kernel = Linux
+## [Kernel = Linux)[https://kernel.org/]
 I have chosen Linux as the Operating System beacause is the biggest open-source project, is private, secure, very customazible and there is a big community that can help you . Also is the only one that can compite against the proprietary system such as Windows and macOS. And in case you don't know, Linux is only the Kernel of the Operating System that communicates with the computer hardware, the rest of the OS is constrcuted on top of that.
 
-## Linux distribution = Arch-Linux
+## Linux distribution = [Arch-Linux](https://archlinux.org/)
 Arch Linux is a very lightway Linux distribution with around 300 packages preinstalled and with 800 MiB of space (perfect for old CDs). It has a big community that grows every day and it has a package manager (pacman) very useful with tons of packages. There are others distributions like Debian, Fedora, openSUSE, Slackware, Red hat, Alpine Linux, Void Linux.
 
-## Desktop Environment = KDE
+## Desktop Environment = [KDE](https://kde.org/)
 Most of us are familiar with Windows or perhaps MacOS before using Linux, and these operating systems are great in terms of usability, but not for privacy.To achieve a similar design and good usability, the best option is to use a desktop environment such as KDE (K Desktop Environment) or, for something simpler, GNOME or XFCE. KDE is under development and is the biggest open-source project that develop free user applications. Also it has mouse gestures on laptops and is customizable to the exteme.
 
+![](/img/linux-architecture.jpg)
+
 ---
+
 
 ![](/img/karchsys-min.png)
 
