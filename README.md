@@ -89,7 +89,7 @@ sh ./karchsys/scripts/archinstall-config.sh
 
 ### Option 2. Download a distributions with KDE pre-configured
 
-- Arch-based with KDE: [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/), [Endeavouros KDE](https://endeavouros.com/latest-release/), [Garuda KDE Linux Lite](https://sourceforge.net/projects/garuda-linux/files/garuda/kde-lite/), [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso), [RebornOS](https://www.rebornos.org/download/), [Xerolinux](https://sourceforge.net/projects/xerolinux/)
+- Arch-based with KDE: [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/), [Endeavouros KDE](https://endeavouros.com/latest-release/), [Garuda KDE Dr460nized](https://iso.builds.garudalinux.org/iso/garuda/dr460nized/), [Garuda KDE Linux Lite](https://iso.builds.garudalinux.org/iso/garuda/kde-lite/), [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso), [RebornOS](https://www.rebornos.org/download/), [Xerolinux](https://sourceforge.net/projects/xerolinux/)
 
 - Debian-based with KDE: [KDE Neon](https://neon.kde.org/), [Kubuntu](https://kubuntu.org/), [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/), [Nitrux KDE](https://sourceforge.net/projects/nitruxos/files/Release/ISO/)
 
