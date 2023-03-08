@@ -1,0 +1,5 @@
+# typical flatpaks
+flathub com.usebottles.bottles me.hyliu.fluentreader net.veloren.airshipper com.github.tchx84.Flatseal net.davidotek.pupgui2 org.gimp.GIMP
+
+# other flatpaks
+# sh.ppy.osu io.lbry.lbry-app io.gitlab.theevilskeleton.Upscaler

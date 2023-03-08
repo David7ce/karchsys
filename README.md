@@ -44,6 +44,9 @@ You can change the username or password after the installation, or put another i
 | `[SWAP]`    | `/dev/swap_partition`       | Linux swap            | 2203 MiB                | SWAP           |
 | `/mnt`      | `/dev/root_partition`       | Linux x86-64 root     | Remainder of the device | BTRFS or EXT4  |
 
+- For BTRFS partition use subvolumes (@.snapshots, @, @home, @log, @var, @pkg)
+- For EXT4, one partition root (/) with (/bin /boot /dev /etc /home /lib /lib64 /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var) or separate /home
+
 ## Linux software
 - Kernel: linux
 - Linux-distribution: arch-Linux
