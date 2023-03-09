@@ -81,10 +81,10 @@ dd if=~/Downloads/arch.iso of=/dev/sdb status=progress
 Boot into the live environment from the USB in a your real hardware or select the iso in a virtual machine.
 
 Depending of your needs you can install:
-    - an Arch Linux system from scratch 
-    - an Arch-based system preconfigured
+- an Arch Linux system from scratch 
+- an Arch-based system preconfigured
 
-## 1. Install Arch from scratch
+## 1.A. Install Arch from scratch
 There are various options to install this configuration system inside Arch Linux:
 
 ### A) Run archinstall command
@@ -113,17 +113,17 @@ sh ./scripts/karchsys.sh
 - Write the commands manually following the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 
-## Systems with preconfigured KDE
+## 1.B Install a system with preconfigured KDE
 
-If you don't want to configure Arch Linux, you can also install distributions preconfigured with KDE.
+If you don't want to configure Arch Linux, you can also install distributions with preconfigured with KDE.
 
 - Arch-based with KDE: [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/), [Endeavouros KDE](https://endeavouros.com/latest-release/), [Garuda KDE Dr460nized](https://iso.builds.garudalinux.org/iso/garuda/dr460nized/), [Garuda KDE Linux Lite](https://iso.builds.garudalinux.org/iso/garuda/kde-lite/), [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso), [RebornOS](https://www.rebornos.org/download/), [Xerolinux](https://sourceforge.net/projects/xerolinux/)
 
-- Arch with GUI installer to select packages and live-environment: [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
+- Arch with GUI installer to select packages on a live-environment: [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
 
 - Debian-based with KDE: [KDE Neon](https://neon.kde.org/), [Kubuntu](https://kubuntu.org/), [MX Linux KDE](https://sourceforge.net/projects/mx-linux/files/Final/KDE/), [Nitrux KDE](https://sourceforge.net/projects/nitruxos/files/Release/ISO/)
 
-- rpm-based with KDE: [Fedora KDE](https://spins.fedoraproject.org/), [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum), [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
+- RPM-based with KDE: [Fedora KDE](https://spins.fedoraproject.org/), [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum), [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
 
 - Independent-linux-distros with KDE: [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/), [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download), [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
 
