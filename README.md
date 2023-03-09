@@ -75,7 +75,7 @@ Download the Linux distribution as iso and create a booteable USB or select the 
 sudo fdisk –l            # find the disk to create the bootable system
 umount /dev/sdb*         # unmount the disk
 mkfs.vfat /dev/sdb –I    # format the disk to the selected formating (bfs, ext2, ext3, ext4, exfat, fat, vfat, minix, ntfs, msdos, xfs, xiafs)
-dd if=~/Downloads/arch.iso of=/dev/sdb status=progress
+dd if=~/Downloads/arch.iso of=/dev/sdb bs=4M status=progress
 ```
 
 Boot into the live environment from the USB in a your real hardware or select the iso in a virtual machine.
