@@ -72,10 +72,10 @@ You can change the username or password after the installation, or put another i
 ## 0. Prerequisites
 Download the Linux distribution as iso and create a booteable USB or select the iso in the virtual machine. To create a booteable USB you can copy the iso with dd command on Unix (BSD, Linux, mac) systems or use Rufus, Ventoy, BalenaEtcher on Windows.
 ```sh
-sudo fdisk –l     # find the disk to create the bootable system
-umount /dev/sdb*  # unmount the disk
-mkfs.vfat /dev/sdb –I # format the disk to the selected formating (vfat, fat, ext4, ntfs)
-dd if=~/home/Buvanesh/iso/Ubuntu32.iso of=/dev/sdb status=progress
+sudo fdisk –l            # find the disk to create the bootable system
+umount /dev/sdb*         # unmount the disk
+mkfs.vfat /dev/sdb –I    # format the disk to the selected formating (bfs, ext2, ext3, ext4, exfat, fat, vfat, minix, ntfs, msdos, xfs, xiafs)
+dd if=~/Downloads/arch.iso of=/dev/sdb status=progress
 ```
 
 Boot into the live environment from the USB in a your real hardware or select the iso in a virtual machine.
@@ -113,7 +113,9 @@ sh ./scripts/karchsys.sh
 - Write the commands manually following the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 
-### 1. Download a distributions with KDE pre-configured
+## Systems with preconfigured KDE
+
+If you don't want to configure Arch Linux, you can also install distributions preconfigured with KDE.
 
 - Arch-based with KDE: [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/), [Endeavouros KDE](https://endeavouros.com/latest-release/), [Garuda KDE Dr460nized](https://iso.builds.garudalinux.org/iso/garuda/dr460nized/), [Garuda KDE Linux Lite](https://iso.builds.garudalinux.org/iso/garuda/kde-lite/), [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso), [RebornOS](https://www.rebornos.org/download/), [Xerolinux](https://sourceforge.net/projects/xerolinux/)
 
@@ -124,6 +126,7 @@ sh ./scripts/karchsys.sh
 - rpm-based with KDE: [Fedora KDE](https://spins.fedoraproject.org/), [Nobara Project (KDE)](https://nobaraproject.org/wp-content/uploads/Nobara-37-KDE-2023-02-25.iso.sha256sum), [openSUSE KDE](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso?mirrorlist)
 
 - Independent-linux-distros with KDE: [Alt Workstation KDE](https://getalt.org/en/alt-kworkstation/), [KaOS - SourceForge](https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.12-x86_64.iso/download), [Rosa Linux KDE](https://mirror.rosalinux.ru/rosa/rosa2021.1/iso/ROSA.FRESH.12/plasma5/)
+
 
 ## 2. Post-installation
 After installing KarchSys you can install extra packages with your package manager. Execute `sh ./scripts/install-packages.sh` for Arch linux or create your script.
@@ -148,7 +151,7 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 
 ---
 
-# Resources
+## Resources
 - [Arch Linux - Download](https://archlinux.org/download/)
 - [Arch Linux installation guide](https://wiki.archlinux.org/title/Installation_guide)
 - [Archinstall - man page](https://man.archlinux.org/man/extra/archinstall/archinstall.1.en)
