@@ -113,7 +113,7 @@ sh ./scripts/karchsys.sh
 - Write the commands manually following the [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)
 
 
-## 1.B Install a system with preconfigured KDE
+## 1.B. Install a system with preconfigured KDE
 
 If you don't want to configure Arch Linux, you can also install distributions with preconfigured with KDE.
 
