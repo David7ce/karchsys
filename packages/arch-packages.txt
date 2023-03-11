@@ -21,12 +21,30 @@ nvidia nvidia-lts nvidia-dkms nvidia-utils nvidia-settings
 # Post installation
 # kde packages
 ark digikam elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape kamera kate kbackup kcachegrind kcalc kcron kdeconnect 
-kdenetwork-filesharing kdenlive kmouth kontrast  krita ksystemlog markdownpart okular partitionmanager print-manager skanlite skanpage
+kdenetwork-filesharing kdenlive kmouth kontrast ksystemlog markdownpart okular partitionmanager print-manager skanlite skanpage
 spectacle sweeper yakuake
 
 # basic packages
-archinstall arduino asciinema audacious base base-devel bleachbit blender calibre chromium clonezilla code curl discord docker docker-compose ffmpeg ffmpegthumbnailer firefox firewalld flameshot flatpak git godot gparted handbrake imagemagick keepassxc kitty libreoffice-fresh libvirt libwebp lynx mesa mpv neofetch neovim ntfs-3g obs-studio obsidian pacman-mirrorlist picard qbittorrent qemu-base reflector rsync shotwell telegram-desktop tree tmux unrar virt-install vlc wget wine yt-dlp
-debtap dpkg freshfetch gimp latte-dock lshw nb qemu-desktop virtualbox
+archinstall arduino base base-devel bleachbit clonezilla curl discord docker docker-compose ffmpeg ffmpegthumbnailer firewalld flameshot flatpak git godot gparted handbrake keepassxc kitty libvirt libwebp lynx mesa mpv neofetch neovim ntfs-3g pacman-mirrorlist picard qbittorrent reflector rsync telegram-desktop tree tmux unrar wget wine yt-dlp
+debtap dpkg latte-dock lshw nb
+
+# browser
+chromium firefox
+
+# editor
+blender code krita gimp imagemagick libreoffice-fresh obsidian
+
+# viewer
+audacious calibre mpv shotwell vlc
+
+# recorder
+asciinema obs-studio
+
+# virtual
+qemu-base qemu-desktop virt-install virtualbox
+
+# webcam
+# kamoso cheese
 
 # games
 supertux supertuxkart
