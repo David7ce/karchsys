@@ -161,3 +161,4 @@ chown -R $USER: ~/.config/kitty ~/.config/neofetch ~/.config/nvim ~/.config/obs-
 - [Distributions featuring KDE Plasma](https://community.kde.org/Distributions)
 - [KDE - ArchWiki](https://wiki.archlinux.org/title/KDE)
 - [10 Ways KDE is just better - YouTube](https://www.youtube.com/watch?v=3nX1YEQg5Z0)
+- [Por estas 5 razones Arch Linux es simplemente MEJOR](https://www.youtube.com/watch?v=hk4t1RhnKVo)
