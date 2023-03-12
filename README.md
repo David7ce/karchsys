@@ -48,15 +48,16 @@ You can change the username or password after the installation, or put another i
 - For EXT4, one partition root (/) with (/bin /boot /dev /etc /home /lib /lib64 /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var) or separate /home
 
 ## Linux software
+- Linux-distribution: arch-linux
 - Kernel: linux
-- Linux-distribution: arch-Linux
 - Bootloader: grub (better for btrfs) / systemd-boot
 - Shell: bash / fish / zsh
+- Sys-init: systemd
 - Drivers: 
     - Audio-drivers: pìpewire
-    - Video-drivers: amd-gpu / nvidia (nvidia open nvidia-utils nouveau)
+    - Video-drivers: vulkan-radeon (amd-gpu) / nvdia-open (old-GPUs) / nvidia (new-GPUs)
 - Desktop environment: KDE-plasma
-    - Display-server: xorg xorg-xwayland / wayland weston
+    - Display-server: xorg / wayland
     - File-manager: dolphin
     - Terminal: konsole
     - Terminal-text-editor: nano vim
@@ -119,7 +120,7 @@ sh ./scripts/karchsys.sh
 
 If you don't want to configure Arch Linux, you can also install distributions with preconfigured with KDE.
 
-- Arch-based with KDE: [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/), [Endeavouros KDE](https://endeavouros.com/latest-release/), [Garuda KDE Dr460nized](https://iso.builds.garudalinux.org/iso/garuda/dr460nized/), [Garuda KDE Linux Lite](https://iso.builds.garudalinux.org/iso/garuda/kde-lite/), [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso), [RebornOS](https://www.rebornos.org/download/), [Xerolinux](https://sourceforge.net/projects/xerolinux/)
+- Arch-based with KDE: [ArcoLinux KDE](https://sourceforge.net/projects/arcolinux-community-editions/files/plasma/), [CachyOS KDE](https://mirror.cachyos.org/ISO/kde/), [Endeavouros KDE](https://endeavouros.com/latest-release/), [Garuda KDE Dr460nized](https://iso.builds.garudalinux.org/iso/garuda/dr460nized/), [Garuda KDE Linux Lite](https://iso.builds.garudalinux.org/iso/garuda/kde-lite/), [Manjaro KDE](https://download.manjaro.org/kde/22.0/manjaro-kde-22.0-221224-linux61.iso), [RebornOS](https://www.rebornos.org/download/), [Xerolinux](https://sourceforge.net/projects/xerolinux/)
 
 - Arch with GUI installer to select packages on a live-environment: [ArcoLinux-D (Decision)](https://ftp.belnet.be/arcolinux/iso/v23.01.03/arcolinuxd-v23.01.03-x86_64.iso)
 
