@@ -1,6 +1,6 @@
 # desktop-environment
 plasma-desktop plasma-meta plasma-workspace plasma-wayland-session
-# accountsservice appstream-qt baloo bluedevil drkonqi gawk kactivitymanagerd khelpcenter konsole kmix kmix kwin kmousetool kpeople kpipewire kscreen ksystemstats kwallet powerdevil sddm-kcm wayland-protocols
+# accountsservice appstream-qt baloo bluedevil drkonqi gawk kactivitymanagerd khelpcenter konsole kmix kwin kmousetool kpeople kpipewire kscreen ksystemstats kwallet powerdevil sddm-kcm wayland-protocols
 
 ## system-loader
 grub grub-btrfs grub-customizer grub-theme-vimix
@@ -17,22 +17,20 @@ nvidia nvidia-dkms
 # nvidia-open nvidia-open-dkms 
 # nvidia-lts nvidia-utils nvidia-settings
 
-# kernel
-base base-devel dracut efibootmgr linux linux-firmware linux-headers mkinitcpio syslinux wireless-regdb
+# kernel (linux linux-lts linux-hardened linux-zen)
+base base-devel dracut efibootmgr kernel-modules-hook linux linux-firmware linux-headers mkinitcpio syslinux wireless-regdb
 
 # archlinux
 archinstall 
 
 # Post-installation
-## kde packages
+## kde extra-packages
 ark digikam elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape 
 kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork-filesharing kdenlive kinit kmouth kontrast ksystemlog
-latte-dock markdownpart okular partitionmanager print-manager
-skanlite skanpage spectacle sweeper yakuake
+latte-dock markdownpart okular partitionmanager print-manager skanlite skanpage spectacle sweeper yakuake
 
 ## basic-tools
-curl docker docker-compose dpkg flatpak git geoip gnu-netcat hblock lshw iw man-db man-pages mtools nmap neofetch ntfs-3g profile-sync-daemon reflector rsync tree tmux unrar wget whois wine yad
-bash-completion bind fscrypt kernel-modules-hook traceroute usbutils
+bash-completion bind curl docker docker-compose dpkg flatpak fscrypt geoip git gnu-netcat hblock lshw iw man-db man-pages mtools nmap neofetch ntfs-3g profile-sync-daemon reflector rsync traceroute tree tmux unrar usbutils wget whois wine yad  
 
 ## GUI tools
 bleachbit clonezilla firewalld gparted keepassxc handbrake picard 
