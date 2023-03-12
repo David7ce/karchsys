@@ -1,8 +1,6 @@
-# Desktop-environment (kde-plasma)
-plasma-desktop plasma-meta  plasma-workspace plasma-wayland-session
-# accountsservice appstream-qt baloo bluedevil drkonqi gawk 
-# kactivitymanagerd khelpcenter konsole kmix kmix kwin kmousetool kpeople kpipewire kscreen ksystemstats kwallet 
-# powerdevil sddm-kcm wayland-protocols
+# desktop-environment
+plasma-desktop plasma-meta plasma-workspace plasma-wayland-session
+# accountsservice appstream-qt baloo bluedevil drkonqi gawk kactivitymanagerd khelpcenter konsole kmix kmix kwin kmousetool kpeople kpipewire kscreen ksystemstats kwallet powerdevil sddm-kcm wayland-protocols
 
 ## system-loader
 grub grub-btrfs grub-customizer grub-theme-vimix
@@ -11,26 +9,39 @@ grub grub-btrfs grub-customizer grub-theme-vimix
 # xorg-server xorg-xwayland upower
 
 ## audio-drivers
-pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse 
+alsa-firmware pipewire pipewire-alsa pipewire-audio pipewire-media-session pipewire-pulse pipewire-support pipewire-v4l2 pipewire-x11-bell pipewire-zeroconf
 
 ## video-drivers
 lib32-mesa libva-mesa-driver mesa xf86-video-amdgpu xf86-video-nouveau xf86-video-vesa xf86-video-ati-git xf86-video-chips
-nvidia-open # nvidia-open-dkms 
-nvidia # nvidia-dkms
-nvidia-lts nvidia-utils nvidia-settings
+nvidia nvidia-dkms
+# nvidia-open nvidia-open-dkms 
+# nvidia-lts nvidia-utils nvidia-settings
 
-# Post-installation, basic packages
+# kernel
+base base-devel dracut efibootmgr linux linux-firmware linux-headers mkinitcpio syslinux wireless-regdb
+
+# archlinux
+archinstall 
+
+# Post-installation
 ## kde packages
 ark digikam elisa filelight ffmpegthumbnailer ffmpegthumbs gwenview inkscape 
-kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork-filesharing kdenlive kmouth kontrast ksystemlog
+kamera kate kbackup kcachegrind kcalc kcron kdeconnect kdenetwork-filesharing kdenlive kinit kmouth kontrast ksystemlog
 latte-dock markdownpart okular partitionmanager print-manager
 skanlite skanpage spectacle sweeper yakuake
 
 ## basic-tools
-archinstall base base-devel curl docker docker-compose dpkg flatpak git lshw neofetch ntfs-3g reflector rsync tree tmux unrar wget wine
+curl docker docker-compose dpkg flatpak git geoip gnu-netcat hblock lshw iw man-db man-pages mtools nmap neofetch ntfs-3g profile-sync-daemon reflector rsync tree tmux unrar wget whois wine yad
+bash-completion bind fscrypt kernel-modules-hook traceroute usbutils
+
+## GUI tools
+bleachbit clonezilla firewalld gparted keepassxc handbrake picard 
+
+## lib
+lib32-alsa-lib lib32-curl lib32-libxml2 lib32-libxmu lib32-pipewire lib32-pipewire-jack lib32-vulkan-icd-loader lib32-wayland libpipeline libx86emu
 
 ## terminal-emulator
-kitty
+alacritty kitty starship terminus-font
 
 ## browser
 chromium firefox lynx
@@ -39,90 +50,19 @@ chromium firefox lynx
 qbittorrent
 
 ## editor
-arduino blender code krita gimp godot imagemagick libreoffice-fresh obsidian neovim
+arduino blender code krita gimp godot imagemagick libreoffice-fresh obsidian neovim micro
 
 ## viewer
 audacious calibre ffmpeg ffmpegthumbnailer ffmpegthumbs mpv shotwell vlc yt-dlp
 
 ## recorder
-asciinema obs-studio flameshot
+asciinema obs-studio flameshot kamoso cheese
 
 ## social
 discord telegram-desktop
 
-## tools
-bleachbit clonezilla firewalld gparted keepassxc handbrake picard 
-
-## virtual
+## virtual-emulator
 libvirt libwebp qemu-base qemu-desktop virt-install virtualbox
 
-## webcam
-# kamoso cheese
-
 ## games
-supertux supertuxkart steam
-
-# ---
-
-alsa-firmware
-b43-fwcutter
-bash-completion
-bind
-
-dracut
-
-fscrypt
-geoip
-gnu-netcat
-
-hblock
-kernel-modules-hook
-kinit
-
-iw
-
-lib32-alsa-lib
-lib32-curl
-
-lib32-libxml2
-lib32-libxmu
-
-lib32-pipewire
-lib32-pipewire-jack
-
-lib32-vulkan-icd-loader
-lib32-wayland
-libpipeline
-libx86emu
-
-man-db
-man-pages
-
-mtools
-
-micro
-
-nmap
-
-pace
-pahole
-
-pipewire-support
-pipewire-v4l2
-pipewire-x11-bell
-pipewire-zeroconf
-
-profile-sync-daemon
-
-snapper-tools
-sof-firmware
-starship
-terminus-font
-traceroute
-update-grub
-usbutils
-whois
-wireless-regdb
-wqy-zenhei
-xsel
-yad
+steam supertux supertuxkart
