@@ -70,19 +70,21 @@ You can change the username or password after the installation, or put another i
 # How to install
 
 ## 0. Prerequisites
-Download the Linux distribution as iso and create a booteable USB or select the iso in the virtual machine. To create a booteable USB you can copy the iso with dd command on Unix (BSD, Linux, mac) systems or use Rufus, Ventoy, BalenaEtcher on Windows.
+Download the Linux distribution as iso and create a booteable USB or select the iso in the virtual machine. To create a booteable USB you can copy the iso with dd command on Unix (BSD, Linux, mac) systems or use GUI apps like Ventoy (permit usb with multiple booteable images), BalenaEtcher, Rufus (for Windows), etc.
+If you use dd command, you have to unmount your chooseable disk and format the a file system. There are these option for file systems (bfs, ext2, ext3, ext4, exfat, fat, vfat, minix, ntfs, msdos, xfs, xiafs), but the typical for most OS are fat, then ext4 for linux and ntfs for windows.
+
 ```sh
-sudo fdisk –l            # find the disk to create the bootable system
-umount /dev/sdb*         # unmount the disk
-mkfs.vfat /dev/sdb –I    # format the disk to the selected formating (bfs, ext2, ext3, ext4, exfat, fat, vfat, minix, ntfs, msdos, xfs, xiafs)
+sudo fdisk –l         # find the disk to create the bootable system
+umount /dev/sdb*      # unmount the disk
+mkfs.vfat /dev/sdb –I
 dd if=~/Downloads/arch.iso of=/dev/sdb bs=4M status=progress
 ```
 
-Boot into the live environment from the USB in a your real hardware or select the iso in a virtual machine.
+Boot into the live environment from the USB in a real hardware or select the iso in a virtual machine.
 
 Depending of your needs you can install:
-- an Arch Linux system from scratch 
-- an Arch-based system preconfigured
+- an Arch Linux system from scratch (1.A)
+- an Arch-based system preconfigured (1.B)
 
 ## 1.A. Install Arch from scratch
 There are various options to install this configuration system inside Arch Linux:
