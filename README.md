@@ -129,7 +129,7 @@ If you don't want to configure Arch Linux, you can also install distributions wi
 
 
 ## 2. Post-installation
-After installing KarchSys you can install extra packages with your package manager. Execute `sh ./scripts/install-packages.sh` for Arch linux or create your script.
+After installing KarchSys you can install extra packages with your package manager. Execute `sh ./scripts/install-packages.sh` for Arch linux or create your own script.
 ```sh
 sudo pacman -S package-name  # on arch
 sudo apt install package-name # on debian

@@ -6,13 +6,15 @@ cd yay
 makepkg -si
 
 # install the list of packages with pacman
-# grep -v "^#" arch-packages.txt | xargs sudo pacman -S # directly ignore line comments
+# grep -v "^#" ../packages/arch-packages.txt | xargs sudo pacman -S # ignore line comments
 cat ../packages/arch-packages.txt | xargs sudo pacman -S
 
 # install the list of packages with yay
+# grep -v "^#" ../packages/aur-packages.txt | xargs sudo pacman -S
 cat ../packages/aur-packages.txt | xargs sudo pacman -S
 
 # install the list packages with flatpak
+# grep -v "^#" ../packages/flatpak-packages.txt | xargs sudo pacman -S
 cat ../packages/flatpak-packages.txt | xargs sudo flatpak install
 
 # install homebrew
