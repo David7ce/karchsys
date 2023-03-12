@@ -2,4 +2,4 @@
 activitywatch-bin bottles brew-git dia downgrade debtap fluent-reader helvum-git pamac-aur libpamac libpamac-aur google-earth-pro nb ungoogled-chromium upscayl-bin xampp youtube-music-bin
 
 # btrfs-assistant snapper-support
-# autofirma-bin cava freetube-bin libpamac libpamac-au libpamac-flatpak pamac-aur wlroots-git 
+# autofirma-bin cava freetube-bin libpamac libpamac-au libpamac-flatpak pamac-aur rate-mirrors wlroots-git 
