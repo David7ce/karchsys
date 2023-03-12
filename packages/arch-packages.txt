@@ -18,10 +18,10 @@ nvidia nvidia-dkms
 # nvidia-lts nvidia-utils nvidia-settings
 
 # kernel (linux linux-lts linux-hardened linux-zen)
-base base-devel dracut efibootmgr kernel-modules-hook linux linux-firmware linux-headers mkinitcpio syslinux wireless-regdb
+archinstall base base-devel dracut efibootmgr kernel-modules-hook linux linux-firmware linux-headers mkinitcpio syslinux wireless-regdb
 
-# archlinux
-archinstall 
+## fonts
+nerd-fonts powerline-fonts terminus-font ttf-iosevka-nerd ttf-jetbrains-mono-nerd ttf-linux-libertine ttf-monoid-nerd ttf-space-mono-nerd ttf-terminus-nerd ttf-victor-mono-nerd
 
 # Post-installation
 ## kde extra-packages
